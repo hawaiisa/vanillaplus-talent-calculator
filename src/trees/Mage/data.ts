@@ -767,7 +767,7 @@ export const data: TalentData = {
         reqPoints: 20, 
         prereq: "Ice Block", 
         arrows: [{ dir: "down", from: "c1", to: "e1"}], 
-        description: talentText`Protect the firendly target with a mirror of ice. The mirror reflects spells cast for 8 seconds.`, 
+        description: talentText`Protect the firendly target with a mirror of ice. The mirror reflects spells cast for 5 seconds.`, 
       },
       "Cold Snap": {
         name: "Cold Snap", 

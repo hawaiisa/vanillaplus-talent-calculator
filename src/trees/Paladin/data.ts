@@ -125,26 +125,6 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "b2", to: "c2"}],
         description: talentText`Consecrates the land beneath the Paladin, doing 8 Holy damage to enemies who neter the area.`, 
       },
-      "Long Arm of Justice": {
-        name: "Long Arm of Justice", 
-        pos: "d2", 
-        icon: icons["spell_holy_healingaura"], 
-        maxRank: 3, 
-        reqPoints: 15, 
-        description: talentText`Increases the range of your Judgements, Exorcism, and Hammer of Wrath spells by ${[
-          2,
-          4,
-          6,
-        ]} yards, increases the radius of your Holy Wrath by ${[
-          3,
-          6,
-          9,
-        ]} yards, and reduces the cast time of your Holy Wrath and Hammer of Wrath spells by ${[
-          0.5,
-          1,
-          1.5,
-        ]} sec.`, 
-      },
       "Divine Grace": {
         name: "Divine Grace", 
         pos: "d1", 
@@ -158,6 +138,18 @@ export const data: TalentData = {
           50,
           100,
         ]}%.`, 
+      },
+      "Divine Concentration": {
+        name: "Divine Concentration", 
+        pos: "d2", 
+        icon: icons["spell_holy_fanaticism"], 
+        maxRank: 3, 
+        reqPoints: 15, 
+        description: talentText`Regenerates 1% of your total Mana every ${[
+          15,
+          10,
+          5
+         ]} seconds.`, 
       },
       "Improved Purifying": {
         name: "Improved Purifying", 
@@ -223,21 +215,25 @@ export const data: TalentData = {
         reqPoints: 20, 
         description: talentText`Blasts the target with Holy energy, causing 134 Holy damage to an enemy, or 134 healing to an ally. Heals twice amount on targets that have 20% or less health.`, 
       },
-      "Inevitable Justice": {
-        name: "Inevitable Justice", 
+      "Long Arm of Justice": {
+        name: "Long Arm of Justice", 
         pos: "e3", 
-        icon: icons["spell_holy_divinepurpose"], 
+        icon: icons["spell_holy_healingaura"], 
         maxRank: 3, 
         reqPoints: 20, 
-        description: talentText`Increases the critical strike chance of all Judgements capable of a critical hit by ${[
-          15,
-          30,
-          45,
-        ]}% and reduces the chance your Seals and Judgements will be dispelled by ${[
-          30,
-          60,
-          90,
-        ]}%.`, 
+        description: talentText`Increases the range of your Judgements, Exorcism, and Hammer of Wrath spells by ${[
+          2,
+          4,
+          6,
+        ]} yards, increases the radius of your Holy Wrath by ${[
+          3,
+          6,
+          9,
+        ]} yards, and reduces the cast time of your Holy Wrath and Hammer of Wrath spells by ${[
+          0.5,
+          1,
+          1.5,
+        ]} sec.`, 
       },
       "Healing Light": {
         name: "Healing Light", 
@@ -813,13 +809,13 @@ export const data: TalentData = {
           2.5,
         ]} sec.`, 
       },
-      "Crusader Strike": {
-        name: "Crusader Strike", 
+      "Inevitable Justice": {
+        name: "Inevitable Justice", 
         pos: "g2", 
-        icon: icons["spell_holy_crusaderstrike2"], 
+        icon: icons["spell_holy_divinepurpose"], 
         maxRank: 1, 
         reqPoints: 30, 
-        description: talentText`A strike that deals weapon damage and consecrates your weapon, increasing your attack speed by 5% for 15 seconds, stacking up to 5 times.`, 
+        description: talentText`Increases the critical strike chance of all Judgements by 25% and reduces the chance your Seals and Judgements will be dispelled by 50%.`, 
       },
     },
   },

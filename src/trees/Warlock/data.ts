@@ -12,6 +12,20 @@ export const data: TalentData = {
     background: backgrounds["affliction"],
     icon: icons["spell_shadow_deathcoil"],
     talents: {
+      "Fel Concentration": {
+        name: "Fel Concentration",
+        pos: "a1",
+        icon: icons["spell_shadow_fingerofdeath"],
+        maxRank: 5,
+        reqPoints: 0,
+        description: talentText`Gives you a ${[
+          14,
+          28,
+          42,
+          56,
+          70,
+        ]}% chance to avoid interruption caused by damage while channeling the Drain life, Drain Mana or Drain Soul spell.`,
+      },
       "Improved Life Tap": {
         name: "Improved Life Tap",
         pos: "a2",
@@ -43,34 +57,6 @@ export const data: TalentData = {
           90,
         ]} sec.`,
       },
-      "Improved Corruption": {
-        name: "Improved Corruption",
-        pos: "a4",
-        icon: icons["spell_shadow_abominationexplosion"],
-        maxRank: 5,
-        reqPoints: 0,
-        description: talentText`Reduces the Mana cost and threat caused by your Corruption spell by ${[
-          6,
-          12,
-          18,
-          24,
-          30,
-        ]}%.`,
-      },
-      "Fel Concentration": {
-        name: "Fel Concentration",
-        pos: "b1",
-        icon: icons["spell_shadow_fingerofdeath"],
-        maxRank: 5,
-        reqPoints: 5,
-        description: talentText`Gives you a ${[
-          14,
-          28,
-          42,
-          56,
-          70,
-        ]}% chance to avoid interruption caused by damage while channeling the Drain life, Drain Mana or Drain Soul spell.`,
-      },
       "Suppression": {
         name: "Suppression",
         pos: "b2",
@@ -97,6 +83,20 @@ export const data: TalentData = {
           6,
         ]}%.`,
       },
+      "Improved Corruption": {
+        name: "Improved Corruption",
+        pos: "b4",
+        icon: icons["spell_shadow_abominationexplosion"],
+        maxRank: 5,
+        reqPoints: 5,
+        description: talentText`Reduces the Mana cost and threat caused by your Corruption spell by ${[
+          6,
+          12,
+          18,
+          24,
+          30,
+        ]}%.`,
+      },
       "Improved Drain": {
         name: "Improved Drain",
         pos: "c1",
@@ -111,16 +111,17 @@ export const data: TalentData = {
           30,
         ]}% of the Mana drained by your Drain Mana spell to damage the opponent.`,
       },
-      "Prolonged Misery": {
-        name: "Prolonged Misery",
+      "Black Speech": {
+        name: "Black Speech",
         pos: "c2",
-        icon: icons["spell_shadow_unstableafllictions"],
-        maxRank: 2,
+        icon: icons["spell_shadow_soulleech"],
+        maxRank: 3,
         reqPoints: 10,
-        description: talentText`Increases the duration of your Corruption, Curse of Agony and Immolate spells by ${[
-          3,
-          6,
-        ]} sec.`,
+        description: talentText`Increases your chance to resist Silence and Interrupt mechanics by an additional ${[
+          10,
+          20,
+          30,
+        ]}%.`,
       },
       "Amplify Curse": {
         name: "Amplify Curse",
@@ -179,17 +180,17 @@ export const data: TalentData = {
         reqPoints: 20,
         description: talentText`Transfers 15 health from the target to the caster every 3 sec. Lasts 30 sec.`,
       },
-      "Black Speech": {
-        name: "Black Speech",
+      "Prolonged Misery": {
+        name: "Prolonged Misery",
         pos: "e3",
-        icon: icons["spell_shadow_soulleech"],
+        icon: icons["spell_shadow_unstableafllictions"],
         maxRank: 3,
         reqPoints: 20,
-        description: talentText`Increases your chance to resist Silence and Interrupt mechanics by an additional ${[
-          10,
-          20,
-          30,
-        ]}%.`,
+        description: talentText`Increases the duration of your Corruption, Curse of Agony ${["", "", "Curse of Exhaustion "]}and Immolate spells by ${[
+          2,
+          4,
+          6,
+        ]} sec.`,
       },
       "Death and Decay": {
         name: "Death and Decay",
@@ -198,8 +199,8 @@ export const data: TalentData = {
         maxRank: 1,
         reqPoints: 20,
         prereq: "Improved Corruption",
-        arrows: [{ dir: "down", from: "a4", to: "e4" }],
-        description: talentText`Invokes the malignant power of death and decaym reducing the effectiveness of any healing by 20% and inflicting Shadow damage equal to your level to nearby enemies every 3 seconds for 30 sec.`,
+        arrows: [{ dir: "down", from: "b4", to: "e4" }],
+        description: talentText`Invokes the malignant power of death and decay, reducing the effectiveness of any healing by 20% and inflicting Shadow damage equal to your level to nearby enemies every 3 seconds for 30 sec.`,
       },
       "Shadow Mastery": {
         name: "Shadow Mastery",
