@@ -95,16 +95,14 @@ export const data: TalentData = {
         name: "Lethality", 
         pos: "c3", 
         icon: icons["ability_criticalstrike"], 
-        maxRank: 5, 
+        maxRank: 3, 
         reqPoints: 10, 
         prereq: "Malice", 
         arrows: [{ dir: "down", from: "a3", to: "c3" }], 
         description: talentText`Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ambush, Ghostly Strike, and Hemorrhage abilities by ${[
-          5,
           10,
-          15,
           20,
-          25,
+          30,
         ]}%.`, 
       },
       "Improved Poisons": {
@@ -174,9 +172,9 @@ export const data: TalentData = {
         description: talentText`Allows ${[
           5,
           10,
-        ]}% of your Health regeneration to work while in combat. In addition, healing taken is increased by ${[
-          10,
-          20,
+        ]}% of your Health regeneration to work while in combat. In addition, healing taken increased by ${[
+          15,
+          30,
         ]}%.`, 
       },
       "Cold Blood": {
@@ -238,9 +236,9 @@ export const data: TalentData = {
         reqPoints: 25, 
         prereq: "Cold Blood", 
         arrows: [{ dir: "down", from: "e2", to: "f2" }], 
-        description: talentText`Increases the critical stike chance of your Sinister Strike, Gouge, Backstab, Ambush, Ghostly Strike, Hemorrhage, or Eciscerate abilities by ${[
-          3,
+        description: talentText`Increases the critical strike chance of your Sinister Strike, Gouge, Backstab, Ambush, Ghostly Strike, Hemorrhage and Eviscerate abilities by ${[
           5,
+          10,
         ]}%.`, 
       },
       "Gaining an Advantage": {
@@ -290,10 +288,10 @@ export const data: TalentData = {
         icon: icons["spell_shadow_ritualofsacrifice"], 
         maxRank: 2, 
         reqPoints: 0, 
-        description: talentText`Reduces the Energy cost of your Sinister Strike by ${[
+        description: talentText`Increases your chance to hit with Sinister Strike by ${[
           3,
           5,
-        ]}.`, 
+        ]}%.`, 
       },
       "Bitter Experience": {
         name: "Bitter Experience", 
@@ -706,7 +704,7 @@ export const data: TalentData = {
         reqPoints: 15, 
         prereq: "Ghostly Strike", 
         arrows: [{ dir: "down", from: "c2", to: "d2" }], 
-        description: talentText`Reduces the cooldown of your Evasion, Vanish, Blind and Cloak of Shadows abilities by ${[
+        description: talentText`Reduces the cooldown of your Evasion, Vanish and Blind by ${[
           1,
           2,
         ]} min.`, 
@@ -733,7 +731,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_nethercloak"], 
         maxRank: 1, 
         reqPoints: 20, 
-        description: talentText`Protects the Rogue from all spells for 5 seconds. Does not break stealth.`, 
+        description: talentText`Protects the rogue from all spells for 5 seconds.  Does not break stealth.`, 
       },
       "Dirty Deeds": {
         name: "Dirty Deeds", 

@@ -815,7 +815,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_divinepurpose"], 
         maxRank: 1, 
         reqPoints: 30, 
-        description: talentText`Increases the critical strike chance of all Judgements by 25% and reduces the chance your Seals and Judgements will be dispelled by 50%.`, 
+        description: talentText`Increases the critical strike chance of all Judgements by 30% and makes your Seals and Judgements undispellable.`, 
       },
     },
   },

@@ -203,7 +203,7 @@ export const data: TalentData = {
         icon: icons["spell_fire_elementaldevastation"], 
         maxRank: 1, 
         reqPoints: 20, 
-        description: talentText`Blasts an enemy with Light, instantly causing 173.5 holy damage, 347 if the target is feared, stunned or incapacitated.`, 
+        description: talentText`Blasts an enemy with Light, instantly causing 173 to 186 holy damage, 347 to 371 if the target is feared, stunned or incapacitated.`, 
       },
       "Twin Disciplines": {
         name: "Twin Disciplines", 
@@ -445,11 +445,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 15, 
         description: talentText`Increases spell damage and healing by up to ${[
-          6,
-          12,
-          18,
+          8,
+          16,
           24,
-          30,
+          32,
+          40,
         ]}% of your total Spirit.`, 
       },
       "Improved Prayer of Healing": {

@@ -233,13 +233,7 @@ export const data: TalentData = {
           6,
           8,
           10,
-        ]}%. Also grants ${[
-          0.2,
-          0.4,
-          0.6,
-          0.8,
-          1,
-        ]} per level Fire, Frost, and Nature spell penetration.`, 
+        ]}%.`, 
       },
       "Lightning Overlord": {
         name: "Lightning Overlord", 
@@ -707,11 +701,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 15, 
         description: talentText`Increases spell damage and healing by up to ${[
-          5,
-          10,
-          15,
-          20,
-          25,
+          8,
+          16,
+          24,
+          32,
+          40,
         ]}% of your total Spirit.`, 
       },
       "Tidal Focus": {

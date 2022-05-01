@@ -833,10 +833,10 @@ export const data: TalentData = {
         reqPoints: 30, 
         prereq: "Cold Snap", 
         arrows: [{ dir: "down", from: "e2", to: "g2" }], 
-        description: talentText`Instantly shields a friendly target, absorbing 438 damage. Lasts 60 seconds. While the shield holds, spells will not be interrupted.`, 
+        description: talentText`Instantly shields a friendly target, absorbing 548 damage. Lasts 60 seconds. While the shield holds, spells will not be interrupted.`, 
       },
-      "Improved Ice Shields": {
-        name: "Improved Ice Shields", 
+      "Advanced Ice Shielding": {
+        name: "Advanced Ice Shielding", 
         pos: "g3", 
         icon: icons["spell_ice_lament"], 
         maxRank: 2, 

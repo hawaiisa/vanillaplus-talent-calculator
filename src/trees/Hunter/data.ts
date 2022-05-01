@@ -450,13 +450,13 @@ export const data: TalentData = {
         icon: icons["inv_musket_03"], 
         maxRank: 5, 
         reqPoints: 15,
-        description: talentText`Your shots ignore up to ${[
-          4,
-          8,
-          12,
-          16,
-          20,
-        ]}% of your opponents armor when carrying a Gun.`, 
+        description: talentText`Causes your shots to ignore up to ${[
+          120,
+          240,
+          360,
+          480,
+          600,
+        ]} (scales with your level) of your target's Armor when carrying a Gun.`, 
       },
       "Snapshot": {
         name: "Snapshot", 
@@ -778,7 +778,7 @@ export const data: TalentData = {
         reqPoints: 20, 
         prereq: "Killer Instinct", 
         arrows: [{ dir: "down", from: "d3", to: "e3"}], 
-        description: talentText`A stinging shot that puts the target to sleep for up to 60 seconds. Any damage will cancel the effect. When the target wakes up, the Sting slows mobement speed by 50% and causes 80 Nature damage over 10 seconds. Only usable out of combat. Only one Sting per hunter can be active on the target at a time.`, 
+        description: talentText`A stinging shot that puts the target to sleep for up to 1 min. Any damage will cancel the effect. When the target wakes up, the Sting slows movement speed by 30% and causes 200 Nature damage over 10 seconds. Only usable out of combat. Only one Sting per hunter can be active on the target at a time.`, 
       },
       "Find Weakness": {
         name: "Find Weakness", 

@@ -851,11 +851,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 25,
         description: talentText`Increases damage and healing done by up to ${[
-          8,
-          16,
-          24,
-          32,
+          10,
+          20,
+          30,
           40,
+          50,
         ]}% of your total Spirit.`,
       },
 
