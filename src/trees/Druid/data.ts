@@ -278,7 +278,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Moonkin Form",
         arrows: [{dir: "down", from: "e2", to: "g2"}],
-        description: talentText`While in Moonkin Form, the Moonkin Aura increases spell critical chance of all raid members within 30 yards by 3%.`,
+        description: talentText`While in Moonkin Form, the Moonkin Aura increases spell critical chance of all raid members within 20 yards by 3%.`,
       },
     },
   },
@@ -527,7 +527,7 @@ export const data: TalentData = {
         reqPoints: 20,
         prereq: "Heart of the Wild",
         arrows: [{ dir: "down", from: "d3", to: "e3" },],
-        description: talentText`Heal yourself for 30% of your maximum health, and increases your maximum health by 30% for 20 sec.`,
+        description: talentText`Heal yourself for 30% of your maximum health, and increases your maximum health by 20% for 20 sec.`,
       },
       
       "Killer Instincts": {

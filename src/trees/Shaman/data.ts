@@ -98,7 +98,7 @@ export const data: TalentData = {
       },
       "Reverberation": {
         name: "Reverberation", 
-        pos: "b4", 
+        pos: "c2", 
         icon: icons["spell_frost_frostward"], 
         maxRank: 5, 
         reqPoints: 5, 
@@ -120,7 +120,7 @@ export const data: TalentData = {
         description: talentText`Sends a wave of sand, blinding nearby enemies for 4 seconds. Targets must be facing you. Any damage caused will remove the effect.`, 
       },
       "Elemental Focus": {
-        name: "Elemental Focus", pos: "c2", 
+        name: "Elemental Focus", pos: "b4", 
         icon: icons["spell_shadow_manaburn"], 
         maxRank: 5, 
         reqPoints: 10, 
@@ -150,9 +150,9 @@ export const data: TalentData = {
         maxRank: 3, 
         reqPoints: 10, 
         description: talentText`Gives you a ${[
-          20,
-          40,
-          60,
+          25,
+          50,
+          75,
         ]}% chance to avoid interruption caused by damage while casting Lightning Bolt or Chain Lightning.`, 
       },
       "Elemental Fury": {

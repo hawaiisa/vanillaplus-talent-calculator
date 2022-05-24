@@ -599,8 +599,8 @@ export const data: TalentData = {
         maxRank: 2, 
         reqPoints: 5, 
         description: talentText`Reduces your target's chance to resist your Shadow spells by ${[
-          5,
-          10,
+          2,
+          4,
         ]}% and increases the range of your Shadow damage spells by ${[
           10,
           20,
@@ -686,11 +686,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 15, 
         description: talentText`Increases your Shadow spell damage by ${[
-          1,
           2,
-          3,
           4,
-          5,
+          6,
+          8,
+          10,
         ]}% nad the effect of your Shadow Protection by ${[
           10,
           20,

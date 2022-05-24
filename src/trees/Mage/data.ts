@@ -30,11 +30,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 0, 
         description: talentText`Reduces the chance that the opponent can resist your Arcane spells by ${[
+          1,
           2,
+          3,
           4,
-          6,
-          8,
-          10,
+          5,
         ]}% and gives you a ${[
           20,
           40,
@@ -50,9 +50,9 @@ export const data: TalentData = {
         maxRank: 3, 
         reqPoints: 0, 
         description: talentText`Reduces the chance that the opponent can resist your Frost and Fire spells by ${[
+          1,
           2,
-          4,
-          6,
+          3,
         ]}%.`, 
       },
       "Arcane Subtlety": {
@@ -515,7 +515,7 @@ export const data: TalentData = {
           33,
           66,
           99,
-        ]}% chance to cause your target to be voulnerable to Fire damage dealt to your target by 3% and lasts 30 seconds. Stacks up to 5 times.`, 
+        ]}% chance to cause your target to be voulnerable to Fire damage dealt to your target by 1% and lasts 30 seconds. Stacks up to 10 times.`, 
       },
       "Ignite": {
         name: "Ignite", 
@@ -538,11 +538,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 25, 
         description: talentText`Increases the damage done by your Fire spells by ${[
-          3,
+          2,
+          4,
           6,
-          9,
-          12,
-          15,
+          8,
+          10,
         ]}%.`, 
       },
       "Pyromania": {
@@ -552,8 +552,8 @@ export const data: TalentData = {
         maxRank: 2, 
         reqPoints: 25, 
         description: talentText`Reduces the casting time of your Fireball and Pyroblast spells by ${[
+          3,
           5,
-          10,
         ]}%, and your flamestrike spell by ${[
           50,
           100,

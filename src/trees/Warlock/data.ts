@@ -43,14 +43,10 @@ export const data: TalentData = {
         icon: icons["spell_shadow_curseofmannoroth"],
         maxRank: 3,
         reqPoints: 0,
-        description: talentText`Increases the duration of your Curse of Exhaustion by ${[
-          3,
-          6,
-          9,
-        ]} sec, the effect of your Curse of Weakness by ${[
+        description: talentText`Increases the effect of your Curse of Exhaustion and Curse of Weakness by ${[
           10,
           20,
-          30
+          30,
         ]}% and the duration of your Curse of Weakness, Curse of Recklessness, Curse of Shadow and Curse of the Elements by ${[
           30,
           60,
@@ -67,8 +63,8 @@ export const data: TalentData = {
           5,
           10,
         ]} yards and reduces the chance for enemies to resist your Affliction spells by ${[
-          5,
-          10,
+          2,
+          4,
         ]}%.`,
       },
       "Improved Curse of Agony": {
@@ -605,7 +601,8 @@ export const data: TalentData = {
         pos: "a2", 
         icon: icons["spell_shadow_deathpact"], 
         maxRank: 5, 
-        reqPoints: 0, description: talentText`Reduces the casting time of your Shadow Bolt by ${[
+        reqPoints: 0, 
+        description: talentText`Reduces the casting time of your Shadow Bolt by ${[
           0.1,
           0.2,
           0.3,
@@ -624,7 +621,8 @@ export const data: TalentData = {
         pos: "a3", 
         icon: icons["spell_fire_fire"], 
         maxRank: 3, 
-        reqPoints: 0, description: talentText`Gives your Destruction spells a ${[
+        reqPoints: 0, 
+        description: talentText`Gives your Destruction spells a ${[
           5,
           10,
           15,
@@ -647,7 +645,8 @@ export const data: TalentData = {
         pos: "b2", 
         icon: icons["spell_fire_flameshock"], 
         maxRank: 5, 
-        reqPoints: 5, description: talentText`Increases the critical strike chance of your Destruction spells by ${[
+        reqPoints: 5, 
+        description: talentText`Increases the critical strike chance of your Destruction spells by ${[
           1,
           2,
           3,
@@ -660,7 +659,8 @@ export const data: TalentData = {
         pos: "b3", 
         icon: icons["spell_fire_firebolt"], 
         maxRank: 2, 
-        reqPoints: 5, description: talentText`Reduces the casting time of your Imp's Firebold spell by ${[
+        reqPoints: 5, 
+        description: talentText`Reduces the casting time of your Imp's Firebold spell by ${[
           0.5,
           1,
         ]} sec and increases the critical strike chance of your Succubus' Lash of Pain ability by ${[
@@ -673,9 +673,10 @@ export const data: TalentData = {
         pos: "c1", 
         icon: icons["spell_fire_lavaspawn"], 
         maxRank: 2, 
-        reqPoints: 10, description: talentText`Reduces the chance for enemies to resist your Destruction spells by ${[
-          3,
-          6,
+        reqPoints: 10, 
+        description: talentText`Reduces the chance for enemies to resist your Destruction spells by ${[
+          2,
+          4,
         ]}% and gives you a ${[
           35,
           70,
