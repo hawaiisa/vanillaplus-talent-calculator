@@ -632,7 +632,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_ashestoashes"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Heals yourself for 20% of your maximum health, and increases your maximum health by 30% for 20 sec.`,
+        description: talentText`Heals yourself for 20% of your maximum health, and increases your maximum health by 20% for 20 sec.`,
       },
       "Shield Mastery": {
         name: "Shield Mastery",

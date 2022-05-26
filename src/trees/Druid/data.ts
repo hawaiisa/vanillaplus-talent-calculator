@@ -527,7 +527,7 @@ export const data: TalentData = {
         reqPoints: 20,
         prereq: "Heart of the Wild",
         arrows: [{ dir: "down", from: "d3", to: "e3" },],
-        description: talentText`Heal yourself for 30% of your maximum health, and increases your maximum health by 20% for 20 sec.`,
+        description: talentText`Heal yourself for 20% of your maximum health, and increases your maximum health by 20% for 20 sec.`,
       },
       
       "Killer Instincts": {
