@@ -131,7 +131,7 @@ export const data: TalentData = {
         icon: icons["ability_druid_dash"], 
         maxRank: 3, 
         reqPoints: 10,
-        description: talentText`Increase the outdoor movement speed of your pets by ${[
+        description: talentText`Increases the movement speed of your pets by ${[
           10,
           20,
           30,
@@ -792,7 +792,7 @@ export const data: TalentData = {
           60,
           80,
           100,
-        ]}% chance to reveal a flaw in your target's defenses, increasing the critical strike chance of attacks made against that target by an additional 5% for 15 seconds.`, 
+        ]}% chance to reveal a flaw in your target's defenses, increasing the critical strike chance of attacks made against that target by an additional 3% for 30 seconds.`, 
       },
       "Lightning Reflexes": {
         name: "Lightning Reflexes", 

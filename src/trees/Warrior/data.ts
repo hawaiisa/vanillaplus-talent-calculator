@@ -59,11 +59,7 @@ export const data: TalentData = {
           5,
           10,
           15,
-        ]}. In addition, increases the range of your Charge by ${[
-          3,
-          5,
-          7,
-        ]} yards.`,
+        ]}.`,
       },
       "Duelist": {
         name: "Duelist",
@@ -100,14 +96,10 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 10,
         description: talentText`Increases the duration of your Hamstring by ${[
-          1,
-          2,
           3,
-        ]} seconds and reduces the target's speed by an additional ${[
-          5,
-          10,
-          15,
-        ]}%.`,
+          6,
+          9,
+        ]}.`,
       },
       "Anger Management": {
         name: "Anger Management",
@@ -807,7 +799,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Training and Discipline",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Increases your Strength by up to 1% of your current Health. Also if you have more than 50% of your Health you become immune to Diseases and if more than 90% to Poisons.`,
+        description: talentText`Increases your Strength by up to 1% of your current Health. Also if you have more than 50% of your Health you become immune to Diseases and if more than 75% to Poisons.`,
       },
     },
   },

@@ -260,7 +260,7 @@ export const data: TalentData = {
           60,
           80,
           100,
-        ]}% chance to energize you, increasing damage and reducing Mana cost of your damage spells by 1% for 15 seconds. Stacks up to 10 times.`, 
+        ]}% chance to energize you, increasing damage and reducing Mana cost of your damage spells by 1% for 20 seconds. Stacks up to 5 times.`, 
       },
       "Earthquake": {
         name: "Earthquake", 

@@ -565,7 +565,7 @@ export const data: TalentData = {
           6,
           8,
           10,
-        ]}% chance to stun the target for 3 seconds.`, 
+        ]}% chance to stun the target for 2 seconds.`, 
       },
       "Spirit Tap": {
         name: "Spirit Tap", 
@@ -615,10 +615,7 @@ export const data: TalentData = {
         description: talentText`Reduces the cooldown of your Psychic Scream spell by ${[
           15,
           30,
-        ]} sec. Also increases the duration by ${[
-          1,
-          2,
-        ]} second${["","s",]} and decreases the enemy's chance to resist Psychic Scream  by ${[
+        ]} sec and decreases an enemy's chance to resist it by ${[
           5,
           10,
         ]}%.`, 
@@ -705,11 +702,11 @@ export const data: TalentData = {
         icon: icons["spell_shadow_shadowpower"], 
         maxRank: 3, 
         reqPoints: 20, 
-        description: talentText`Gives your shadow damage spells a ${[
+        description: talentText`Gives your casts a ${[
           5,
           10,
           15,
-        ]}% chance to generate 3% of your total Mana over 9 seconds at the cost of 9% health.`, 
+        ]}% chance to burn your soul, and to generate 3% of your total Mana over 9 seconds at the cost of 9% health.`, 
       },
       "Vampiric Embrace": {
         name: "Vampiric Embrace", 
