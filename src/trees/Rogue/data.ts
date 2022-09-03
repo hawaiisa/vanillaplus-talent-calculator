@@ -613,10 +613,10 @@ export const data: TalentData = {
         icon: icons["inv_misc_bandana_03"], 
         maxRank: 2, 
         reqPoints: 5, 
-        description: talentText`Reduces the cooldown of you Pickpocket, Distract, and Disarm Trap by ${[
-          40,
-          80,
-        ]}% and reduces cost of your distract by ${[
+        description: talentText`Reduces the cooldown of your Distract and Disarm Trap by ${[
+          10,
+          20,
+        ]}sec and reduces cost of your distract by ${[
           50,
           100,
         ]}%. Also increases the amount of money you gain from pickpocketing by ${[
