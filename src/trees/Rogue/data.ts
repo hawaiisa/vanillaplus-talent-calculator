@@ -793,9 +793,9 @@ export const data: TalentData = {
         prereq: "Cloak of Shadows", 
         arrows: [{ dir: "down", from: "e2", to: "g2" }], 
         description: talentText`Increases your chance to avoid area of effect spells by an additional ${[
-          10,
-          20,
+          15,
           30,
+          45,
         ]}%. While stealthed the effect is doubled.`, 
       },
       "Preparation": {

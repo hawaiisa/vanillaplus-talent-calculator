@@ -163,9 +163,9 @@ export const data: TalentData = {
         reqPoints: 15,
         prereq: "Amplify Curse",
         arrows: [{ dir: "down", from: "c3", to: "d3" }],
-        description: talentText`Decreases the cooldown of your Death and Decay, Amplify Curse and Death Coil spells by ${[
-          30,
-          60,
+        description: talentText`Decreases the cooldown of your Amplify Curse, Death and Decay and Death Coil spells by ${[
+          10,
+          20,
         ]} sec.`,
       },
       "Siphon Life": {
@@ -178,10 +178,10 @@ export const data: TalentData = {
       },
       "Prolonged Misery": {
         name: "Prolonged Misery",
-        pos: "e3",
+        pos: "f3",
         icon: icons["spell_shadow_unstableafllictions"],
         maxRank: 3,
-        reqPoints: 20,
+        reqPoints: 25,
         description: talentText`Increases the duration of your Corruption, Curse of Agony ${["", "", "Curse of Exhaustion "]}and Immolate spells by ${[
           2,
           4,
@@ -238,10 +238,10 @@ export const data: TalentData = {
       },
       "Bubonic Trail": {
         name: "Bubonic Trail",
-        pos: "f3",
+        pos: "e3",
         icon: icons["spell_shadow_callofbone"],
         maxRank: 2,
-        reqPoints: 25,
+        reqPoints: 20,
         description: talentText`Afflicts nearby enemies with a disease that causes Nature damage equal to ${[
           50,
           100,
@@ -256,7 +256,7 @@ export const data: TalentData = {
         icon: icons["inevitabledoom"],
         maxRank: 1,
         reqPoints: 30,
-        description: talentText`Reduces the time between pediodic damage ticks of your Affliction spells by 20%.`,
+        description: talentText`Reduces the time between periodic ticks and duration of your Affliction spells by 20%.`,
       },
     },
   },
@@ -573,7 +573,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Soul Link",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`When activated, sacrifices your summoned demon to grant you an effect based on the demon's type.\n\nImp - Shifts you out of phase with the world for 10 sec and increases your Fire damage by 5% for 5 min.\n\nVoidwalker - Shielding nearby group members, absorbing 1151 damage for 30 sec and restores 3% of your total health every 3 sec for 5 min,\n\nSuccubus - Increases your casting speed by 33% for 30 sec and increases your Shadow damage by 5% for 5 min.\n\nFelhunter - Protexts your from all spells for 8 sec and restores 3% of your total Mana every 3 sec for 5 min.`,
+        description: talentText`When activated, sacrifices your summoned demon to grant you an effect based on demon's type.\n\nImp: Shifts you out of phase with the world for 10 seconds and increases your critical strike chance by 5% for 5 min.\n\nVoidwalker: Shielding nearby group members, absorbing 1151 damage for 30 seconds and restores 3% of your total Health every 3 sec for 5 min.\n\nSuccubus: Increases attack and casting speed of nearby group members by 5% for 30 seconds and increases your damage by 5% for 5 min.\n\nFelhunter: Protects nearby group memebers from all spells for 3 seconds and restores 3% of your total Mana every 3 sec for 5 min.`,
       },
     },
   },

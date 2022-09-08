@@ -489,11 +489,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 25, 
         description: talentText`Increases the amount healed by your healing spells by ${[
-          2,
-          4,
+          3,
           6,
-          8,
-          10,
+          9,
+          12,
+          15,
         ]}%.`, 
       },
       "Faith": {
@@ -703,9 +703,9 @@ export const data: TalentData = {
         maxRank: 3, 
         reqPoints: 20, 
         description: talentText`Gives your casts a ${[
-          5,
           10,
-          15,
+          20,
+          30,
         ]}% chance to burn your soul, and to generate 3% of your total Mana over 9 seconds at the cost of 9% health.`, 
       },
       "Vampiric Embrace": {
