@@ -166,7 +166,7 @@ export const data: TalentData = {
         description: talentText`Decreases the cooldown of your Amplify Curse, Death and Decay and Death Coil spells by ${[
           10,
           20,
-        ]} sec.`,
+        ]}%.`,
       },
       "Siphon Life": {
         name: "Siphon Life",
