@@ -503,7 +503,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_enslavedemon"],
         maxRank: 2,
         reqPoints: 20,
-        description: talentText`Reduces the Attack Speed penalty of your Enslace Demon spell by ${[
+        description: talentText`Reduces the Attack Speed penalty of your Enslave Demon spell by ${[
           20,
           40,
         ]}% and reduces the chance it will be resisted by ${[
