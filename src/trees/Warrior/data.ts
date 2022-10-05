@@ -782,13 +782,13 @@ export const data: TalentData = {
           3,
           4,
           5,
-        ]}%. Also, your critical hits generate ${[
-          2,
-          4,
-          6,
-          8,
-          10,
-        ]}% more threat.`,
+        ]}%. and makes your dodges and parries generate ${[
+          20,
+          40,
+          60,
+          80,
+          100,
+        ]}% of Rage.`,
       },
                   
       "Constitution": {
