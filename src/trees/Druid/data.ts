@@ -850,7 +850,7 @@ export const data: TalentData = {
         icon: icons["animism"],
         maxRank: 5,
         reqPoints: 25,
-        description: talentText`Increases damage and healing done by up to ${[
+        description: talentText`Increases spell damage and healing by up to ${[
           10,
           20,
           30,
