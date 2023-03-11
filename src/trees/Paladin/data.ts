@@ -363,11 +363,11 @@ export const data: TalentData = {
           0.5,
           1,
           1.5,
-        ]} sec and reduces its coolodwn by ${[
+        ]} sec and reduces its cooldown by ${[
           10,
           20,
           30,
-        ]} sec.`, 
+        ]}%.`,
       },
       "Dominance": {
         name: "Dominance", 

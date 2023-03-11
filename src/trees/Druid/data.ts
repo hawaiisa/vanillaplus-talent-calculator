@@ -542,7 +542,7 @@ export const data: TalentData = {
           3,
           4,
           5,
-        ]}%. In addition, your melee critical strikes will increase yout attack speed by ${[
+        ]}%. In addition, your melee critical strikes will increase your attack speed by ${[
           10,
           15,
           20,
