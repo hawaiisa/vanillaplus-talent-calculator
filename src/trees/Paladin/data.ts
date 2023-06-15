@@ -754,11 +754,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 25,
         description: talentText`Causes your attacks to ignore up to ${[
-          60,
           120,
-          180,
           240,
-          300,
+          360,
+          480,
+          600,
         ]} of your target's Armor. The amount of Armor reduced scales with your level. Also, reduces the threat caused by all actions by ${[
           4,
           8,
