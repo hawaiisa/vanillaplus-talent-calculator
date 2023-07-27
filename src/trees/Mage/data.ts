@@ -785,10 +785,10 @@ export const data: TalentData = {
         reqPoints: 20, 
         description: talentText`Regenerates 1% of your health and mana every ${[
           10,
-          9,
           8,
-          7,
           6,
+          4,
+          2,
         ]} seconds if you've been standing still for ~10 sec.`, 
       },
       "Lord of the North Wind": {
