@@ -228,7 +228,7 @@ export const data: TalentData = {
           15,
           20,
           25,
-        ]}% chance to resist dispel effects and increases the damage done by your Curse of Doom by ${[
+        ]}% chance to resist dispel effects.\nAlso, reduces the threat caused and increases the damage of your Curse of Doom by ${[
           20,
           40,
           60,
