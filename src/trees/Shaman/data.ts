@@ -61,9 +61,12 @@ export const data: TalentData = {
         icon: icons["spell_nature_stoneclawtotem"], 
         maxRank: 2, reqPoints: 5, 
         description: talentText`Increases the health of your Stoneclaw Totem by ${[
-          150,
-          300,
-        ]}% and the effect duration of your Earthbind Totem and Earth Shock by ${[
+          50,
+          100,
+        ]}%, the duration of your Earth Shock, Earthbind and Stoneclaw Totems by ${[
+          25,
+          50,
+        ]}% and reduces the Mana cost of your Earthbind and Stoneclaw Totems by ${[
           25,
           50,
         ]}%.`, 
@@ -270,7 +273,7 @@ export const data: TalentData = {
         reqPoints: 30, 
         prereq: "Elemental Mastery", 
         arrows: [{ dir: "down", from: "e2", to: "g2" }], 
-        description: talentText`Shakes the ground, shocking enemies for trivial amounts of Nature damage. Each hit causes echoes that inflict damage to their neraby allies. The effect lessens with distance to the epicenter. Also dazes the targets for 5 seconds and causes a high amount of threat.`, 
+        description: talentText`Shakes the ground, shocking enemies for trivial amount of Nature damage. Each hit causes an echoes that inflicts damage to nearby enemies.\nThe effect lessens with distance to the epicenter.\nAlso dazes the targets for 5 seconds and causes a high amount of threat.`, 
       },
     },
   },

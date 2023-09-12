@@ -497,7 +497,7 @@ export const data: TalentData = {
           12,
           16,
           20,
-        ]}% chance to regain 5 energy.`, 
+        ]}% chance to regain 10 energy.`, 
       },
       "Weapon Expertise": {
         name: "Weapon Expertise", 
@@ -519,11 +519,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 25, 
         description: talentText`Increases the damage of your Sinister Strike, Hemorrhage, and Eviscerate abilities by ${[
-          2,
-          4,
+          3,
           6,
-          8,
-          10,
+          9,
+          12,
+          15,
         ]}%.`, 
       },
       "Adrenaline Rush": {
@@ -532,7 +532,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_shadowworddominate"], 
         maxRank: 1, 
         reqPoints: 30, 
-        description: talentText`You feel the adrenaline, becoming immune to Fear and Incapacitate effects. Energy regeneration rate is increased by 100%. Lasts 20 sec.`, 
+        description: talentText`You feel the adrenaline, becoming immune to Fear and Incapacitate effects. Energy regeneration rate is increased by 100%. Lasts 15 sec.`, 
       },
     },
   },

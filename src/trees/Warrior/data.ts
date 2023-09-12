@@ -491,7 +491,7 @@ export const data: TalentData = {
         reqPoints: 25,
         prereq: "Enrage",
         arrows: [{ dir: "down", from: "d3", to: "f3" }],
-        description: talentText`Increases your attack speed and reduces spell damage taken by 1% to 40%. At full health the bonus is 1% with a greater effect up to 40% if you are badly hurt. Max bonus health threshold: ${[
+        description: talentText`Increases your self-healing, attack and movement speed by 1% to 40%. At full health the bonus is 1% with a greater effect up to 40% if you are badly hurt. Max bonus at health threshold: ${[
           1,
           10,
           20,

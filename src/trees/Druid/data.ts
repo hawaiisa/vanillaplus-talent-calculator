@@ -207,7 +207,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_forceofnature"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`Transforms the Druid into Moonkin Form, increasing spell critical chance by 2% and armor contribution from items by 360%. The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.`,
+        description: talentText`Transforms the Druid into Moonkin Form, increasing spell critical chance by 2%, Arcane and Nature resistances by 60 and armor contribution from items by 180%. The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.`,
       },
       
       "Nature's Grace": {

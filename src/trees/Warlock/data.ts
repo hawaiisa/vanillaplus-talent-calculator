@@ -517,12 +517,12 @@ export const data: TalentData = {
         icon: icons["spell_shadow_shadowpact"],
         maxRank: 5,
         reqPoints: 25,
-        description: talentText`Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by ${[
-          8,
-          16,
-          24,
-          32,
-          40,
+        description: talentText`Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Increases your critical strike chance by ${[
+          3,
+          6,
+          9,
+          12,
+          15,
         ]}%.\n\nVoidwalker - Reduces physical physical damage taken by ${[
           3,
           6,
@@ -573,7 +573,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Soul Link",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`When activated, sacrifices your summoned demon to grant you an effect based on demon's type.\n\nImp: Shifts you out of phase with the world for 10 seconds and increases your critical strike chance by 5% for 5 min.\n\nVoidwalker: Shielding nearby group members, absorbing 1151 damage for 30 seconds and restores 3% of your total Health every 3 sec for 5 min.\n\nSuccubus: Increases attack and casting speed of nearby group members by 5% for 30 seconds and increases your damage by 5% for 5 min.\n\nFelhunter: Protects nearby group memebers from all spells for 3 seconds and restores 3% of your total Mana every 3 sec for 5 min.`,
+        description: talentText`When activated, sacrifices your summoned demon to grant you an effect based on demon's type.\n\nImp: Shifts you out of phase with the world for 10 seconds and reduces your threat caused by 30% for 5 mins.\n\nVoidwalker: Shielding nearby group members, absorbing 1151 damage for 30 seconds and restores 3% of your total Health every 3 sec for 5 min.\n\nSuccubus: Increases attack and casting speed of nearby group members by 5% for 30 seconds and increases your damage by 5% for 5 min.\n\nFelhunter: Protects nearby group memebers from all spells for 3 seconds and restores 3% of your total Mana every 3 sec for 5 min.`,
       },
     },
   },
