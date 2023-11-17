@@ -645,7 +645,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_curse"], 
         maxRank: 1, 
         reqPoints: 10, 
-        description: talentText`A strike that deals 125% weapon damage and increases your chance to doge melee attacks, to avoid ranged attacks, or to resist offensive spells by 15% for 5 seconds. Awards 1 combo point.`, 
+        description: talentText`A strike that deals 125% weapon damage and increases your chance to dodge melee attacks, to avoid ranged attacks, or to resist offensive spells by 15% for 5 seconds. Awards 1 combo point.`, 
       },
       "Improved Ambush": {
         name: "Improved Ambush", 
