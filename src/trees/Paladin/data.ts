@@ -213,7 +213,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_searinglight"], 
         maxRank: 1, 
         reqPoints: 20, 
-        description: talentText`Blasts the target with Holy energy, causing 134 Holy damage to an enemy, or 134 healing to an ally. Heals double the amount on targets that have 20% or less health.`, 
+        description: talentText`Blasts the target with Holy energy, causing 134 Holy damage to an enemy, or 134 healing to an ally. Heals twice the amount on targets that have 20% or less health.`, 
       },
       "Long Arm of Justice": {
         name: "Long Arm of Justice", 
