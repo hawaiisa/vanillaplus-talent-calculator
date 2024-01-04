@@ -261,13 +261,13 @@ export const data: TalentData = {
           12,
           16,
           20,
-        ]}% chance of your next Moonfire or Starfire by 50%, and your Moonfire or Starfire spells have a ${[
+        ]}% chance to increase critical strike chance of your next Moonfire or Starfire by 50%, and your Moonfire or Starfire spells have a ${[
           4,
           8,
           12,
           16,
           20,
-        ]}% chance to increase critical strike chance of your next Wrath by 50%`
+        ]}% chance to increase critical strike chance of your next Wrath by 50%.`
       },
       
       "Moonkin Aura": {
@@ -341,7 +341,7 @@ export const data: TalentData = {
           5,
           10,
           15,
-        ]}% and reduces the cooldown of your Enrage by ${[
+        ]}% and reduces the cooldown of your Enrage ability by ${[
           10,
           20,
           30,
