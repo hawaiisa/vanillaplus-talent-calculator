@@ -104,7 +104,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_faeriefire"],
         maxRank: 3,
         reqPoints: 10,
-        description: talentText`Icreases the range and armor reduction of your Faerie Fire and Faerie Fire (Feral) spells by ${[
+        description: talentText`Increases the range and armor reduction of your Faerie Fire and Faerie Fire (Feral) spells by ${[
           10,
           20,
           30,
@@ -126,7 +126,7 @@ export const data: TalentData = {
         icon: icons["spell_arcane_starfire"],
         maxRank: 5,
         reqPoints: 10,
-        description: talentText`Cause your Starfire and Moonfire spells to stun the target for 4 sec if the target is withing 8yds. Can occur once per ${[
+        description: talentText`Cause your Starfire and Moonfire spells to stun the target for 4 sec if the target is within 8yds. Can occur once per ${[
           60,
           55,
           50,
@@ -141,7 +141,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_naturetouchgrow"],
         maxRank: 2,
         reqPoints: 15,
-        description: talentText`Increases the range of you offensive Balance spells by ${[
+        description: talentText`Increases the range of your offensive Balance spells by ${[
           10,
           20,
         ]}% and reduces the chance enemies will resist them by ${[
@@ -164,7 +164,7 @@ export const data: TalentData = {
           60,
           80,
           100,
-        ]}%. and for your feral abilites by ${[
+        ]}% and for your feral abilites by ${[
           10,
           20,
           30,
