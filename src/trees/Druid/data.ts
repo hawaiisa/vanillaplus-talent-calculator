@@ -562,7 +562,7 @@ export const data: TalentData = {
           2,
           3,
           4,
-          5,
+          6,
         ]}%. In addition, your critical strikes restore ${[
           1,
           2,
