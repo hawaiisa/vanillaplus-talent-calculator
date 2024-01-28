@@ -653,7 +653,7 @@ export const data: TalentData = {
           0.3,
           0.4,
           0.5,
-        ]} sec and increases you Mana regeneration by ${[
+        ]} sec and increases your Mana regeneration by ${[
           10,
           20,
           30,
@@ -735,11 +735,11 @@ export const data: TalentData = {
           20,
           40,
           60,
-        ]}%. and reduces the chance listed spells will be dispelled by ${[
+        ]}% and reduces the chance listed spells will be dispelled by ${[
           30,
           60,
           90,
-        ]}%`,
+        ]}%.`,
       },
 
       "Gift of Nature": {
@@ -818,7 +818,7 @@ export const data: TalentData = {
           9,
           12,
           15,
-        ]}%. In addition, increases eddect and reduces threat cause by Tranquility by ${[
+        ]}%. In addition, increases effect and reduces threat caused by Tranquility by ${[
           20,
           40,
           60,
@@ -833,7 +833,7 @@ export const data: TalentData = {
         icon: icons["catharsis"],
         maxRank: 3,
         reqPoints: 20,
-        description: talentText`Reduces the Mana cost of your Soothe Animal, Hibernate, Remove Curse, Cure Poison, Abolish Poisin, Rebirth and Revive spells by ${[
+        description: talentText`Reduces the Mana cost of your Soothe Animal, Hibernate, Remove Curse, Cure Poison, Abolish Poison, Rebirth and Revive spells by ${[
           15,
           30,
           45,
