@@ -288,10 +288,10 @@ export const data: TalentData = {
         icon: icons["spell_shadow_ritualofsacrifice"], 
         maxRank: 2, 
         reqPoints: 0, 
-        description: talentText`Increases your chance to hit with Sinister Strike by ${[
-          3,
+        description: talentText`Gives you a ${[
           5,
-        ]}%.`, 
+          10,
+        ]}% chance to land an extra Sinister Strike on the same target.`, 
       },
       "Bitter Experience": {
         name: "Bitter Experience", 
