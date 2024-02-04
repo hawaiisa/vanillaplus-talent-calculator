@@ -271,7 +271,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_summonimp"],
         maxRank: 3,
         reqPoints: 0,
-        description: talentText`Increases the effect of your Imp's Fireball, Fire shield and Blood Pact spells by ${[
+        description: talentText`Increases the effect of your Imp's Firebolt, Fire shield and Blood Pact spells by ${[
           10,
           20,
           30,
@@ -660,7 +660,7 @@ export const data: TalentData = {
         icon: icons["spell_fire_firebolt"], 
         maxRank: 2, 
         reqPoints: 5, 
-        description: talentText`Reduces the casting time of your Imp's Fireball spell by ${[
+        description: talentText`Reduces the casting time of your Imp's Firebolt spell by ${[
           0.5,
           1,
         ]} sec and increases the critical strike chance of your Succubus' Lash of Pain ability by ${[
