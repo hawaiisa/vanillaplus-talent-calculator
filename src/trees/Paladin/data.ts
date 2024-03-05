@@ -44,7 +44,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_sleep"], 
         maxRank: 5, 
         reqPoints: 0, 
-        description: talentText`Increase you total Intellect by ${[
+        description: talentText`Increases your total Intellect by ${[
           2,
           4,
           6,
@@ -123,7 +123,7 @@ export const data: TalentData = {
         reqPoints: 10, 
         prereq: "Improved Purifying", 
         arrows: [{ dir: "down", from: "b2", to: "c2"}],
-        description: talentText`Consecrates the land beneath the Paladin, doing 8 Holy damage to enemies who neter the area.`, 
+        description: talentText`Consecrates the land beneath the Paladin, doing 8 Holy damage to enemies who enter the area.`, 
       },
       "Divine Grace": {
         name: "Divine Grace", 
@@ -213,7 +213,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_searinglight"], 
         maxRank: 1, 
         reqPoints: 20, 
-        description: talentText`Blasts the target with Holy energy, causing 134 Holy damage to an enemy, or 134 healing to an ally. Heals twice amount on targets that have 20% or less health.`, 
+        description: talentText`Blasts the target with Holy energy, causing 134 Holy damage to an enemy, or 134 healing to an ally. Heals twice the amount on targets that have 20% or less health.`, 
       },
       "Long Arm of Justice": {
         name: "Long Arm of Justice", 
@@ -393,7 +393,7 @@ export const data: TalentData = {
         icon: icons["inv_sword_20"], 
         maxRank: 5, 
         reqPoints: 20, 
-        description: talentText`Increases the damage your deal with one-handed melee weapons by ${[
+        description: talentText`Increases the damage you deal with one-handed melee weapons by ${[
           3,
           6,
           9,
@@ -457,7 +457,7 @@ export const data: TalentData = {
           60,
           80,
           100,
-        ]}% chance to generate Mana equal to 10% of healing taken.`, 
+        ]}% chance to generate Mana equal to 10% of healing received.`, 
       },
       "Improved Righteous Fury": {
         name: "Improved Righteous Fury", 
@@ -655,7 +655,7 @@ export const data: TalentData = {
         icon: icons["ability_warrior_innerrage"], 
         maxRank: 1, 
         reqPoints: 10, 
-        description: talentText`Gives the Paladin a chance to deal additional Holy damage equal to 50% of normal weapon damage. Only on Seal can be active on the Paladin at any one time. Lasts 30 seconds. Unleashing this Seal's energy will judge an enemy, instantly causing 0 Holy damage, 143 if the target is stunned, incapacitated or disoriented.`, 
+        description: talentText`Gives the Paladin a chance to deal additional Holy damage equal to 50% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 seconds. Unleashing this Seal's energy will judge an enemy, instantly causing 0 Holy damage, 143 if the target is stunned, incapacitated or disoriented.`, 
       },
       "Pursuit of Justice": {
         name: "Pursuit of Justice", 
@@ -723,7 +723,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_mindvision"], 
         maxRank: 1, 
         reqPoints: 20, 
-        description: talentText`Increases Holy damage done by party members within 30 yards by 10%. Players may only have on Aura on them per Paladin at any one time.`, 
+        description: talentText`Increases Holy damage done by party members within 30 yards by 10%. Players may only have one Aura on them per Paladin at any one time.`, 
       },
       "Vengeance": {
         name: "Vengeance", 
