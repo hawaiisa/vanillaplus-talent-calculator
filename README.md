@@ -11,5 +11,5 @@ Usable talent calculator hosted here: https://hawaiisa.github.io/vanillaplus-tal
 
 ## Wishlist / todo  
  
-- Better tooltip positioning for mobile layout.
+~~- Better tooltip positioning for mobile layout.~~ (Attempted fix implemented, please tell if new issues appear)
 - Make it impossible to remove talents below the needed amount of talent points according to the selected tiers.
