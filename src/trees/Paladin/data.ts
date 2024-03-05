@@ -487,10 +487,10 @@ export const data: TalentData = {
         icon: icons["inv_shield_20"], 
         maxRank: 3, 
         reqPoints: 15, 
-        description: talentText`Increases your total Health by ${[
-          5,
+        description: talentText`Decreases damage taken by ${[
+          4,
+          7,
           10,
-          15,
         ]}%.`, 
       },
       "Morale": {

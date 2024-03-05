@@ -688,7 +688,7 @@ export const data: TalentData = {
           6,
           8,
           10,
-        ]}% nad the effect of your Shadow Protection by ${[
+        ]}% and the effect of your Shadow Protection by ${[
           10,
           20,
           30,
