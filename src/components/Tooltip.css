@@ -1,5 +1,5 @@
 .Tooltip-container {
-  --max-width: 20rem;
+  --max-width: 18rem;
   position: absolute;
 
   width: var(--max-width);
@@ -29,6 +29,18 @@
   bottom: 0;
   left: 0;
   transform: translate(-100%, 100%);
+}
+
+.Tooltip-container--mobileRight {
+  top: 0;
+  right: 0;
+  transform: translate(65%, -100%);
+}
+
+.Tooltip-container--mobileLeft {
+  top: 0;
+  right: 0;
+  transform: translate(20%, -100%);
 }
 
 .Tooltip {

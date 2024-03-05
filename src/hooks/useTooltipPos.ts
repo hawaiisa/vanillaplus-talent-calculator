@@ -3,7 +3,7 @@ import { useState, useRef, useLayoutEffect } from "react";
 // TODO: should be hidden by default
 const DEFAULT_POS = "topRight";
 
-export type TooltipPos = "topRight" | "topLeft" | "bottomRight" | "bottomLeft";
+export type TooltipPos = "topRight" | "topLeft" | "bottomRight" | "bottomLeft" | "mobileRight" | "mobileLeft";
 
 export const useTooltipPos = <T extends HTMLElement, U extends HTMLElement>(
   // Optional dependencies for the positioning effect.
@@ -30,9 +30,11 @@ export const useTooltipPos = <T extends HTMLElement, U extends HTMLElement>(
 
       const fitsTop = anchorRect.top >= tooltipRect.height;
       const fitsRight = viewportWidth - anchorRect.right >= tooltipRect.width;
+      const rightDistance = Math.abs(viewportWidth - anchorRect.right - tooltipRect.width);
       const fitsBottom =
         viewportHeight - anchorRect.bottom >= tooltipRect.height;
       const fitsLeft = anchorRect.left >= tooltipRect.width;
+      const leftDistance = Math.abs(anchorRect.left - tooltipRect.width);
 
       if (fitsTop && fitsRight) {
         return "topRight";
@@ -40,6 +42,10 @@ export const useTooltipPos = <T extends HTMLElement, U extends HTMLElement>(
         return "topLeft";
       } else if (fitsBottom && fitsRight) {
         return "bottomRight";
+      } else if (rightDistance > leftDistance) {
+        return "mobileLeft";
+      } else if (rightDistance < leftDistance) {
+        return "mobileRight";
       } else if (fitsBottom && fitsLeft) {
         return "bottomLeft";
       } else {
