@@ -699,7 +699,7 @@ export const data: TalentData = {
         icon: icons["ability_tracking"], 
         maxRank: 5, 
         reqPoints: 10,
-        description: talentText`While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, and Undead, all damage done and critical damage caused to those types by the Hunter is increased by ${[
+        description: talentText`While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids and Undead, all damage caused to those types by the Hunter is increased by ${[
           2,
           4,
           6,
