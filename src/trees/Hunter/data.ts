@@ -177,11 +177,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 15,
         description: talentText`Increases the critical strike chance of your pets by ${[
-          2,
-          4,
+          3,
           6,
-          8,
-          10,
+          9,
+          12,
+          15,
         ]}%.`, 
       },
       "Team Play": {
@@ -193,7 +193,7 @@ export const data: TalentData = {
         description: talentText`Your attacks have a ${[
           5,
           10
-        ]}% chance to invigorate your pet, instantly granting them 50 focus and freeing them from 1 Poison, Disease, Magic, Curse, or Fear effect. Your pet attacks have a chance to inspire you, reducing Mana cost of your next spell or ability by 100% for 5 sec. ${["","More effective than Team Play (Rank 1)."]}`, 
+        ]}% chance to Invigorate your pet, instantly granting them 50 focus and freeing them from 1 Poison, Disease, Magic, Curse, or Fear effects\n\nYour pet attacks have a chance to inspire you, reducing Mana cost of your next spell or ability by 100% for 5 sec. ${["","More effective than Team Play (Rank 1)."]}`, 
       },
       "Bestial Wrath": {
         name: "Bestial Wrath", 
@@ -207,12 +207,14 @@ export const data: TalentData = {
         name: "Savage Flurry", 
         pos: "e4", 
         icon: icons["ability_druid_swipe"], 
-        maxRank: 3, 
+        maxRank: 5, 
         reqPoints: 20,
         description: talentText`Increases your and your pet's attack speed by ${[
-          5,
-          10,
-          15,
+          3,
+          6,
+          9,
+          12,
+          15
         ]}%.`, 
       },
       "Spirit Bond": {
@@ -229,13 +231,13 @@ export const data: TalentData = {
           18,
           24,
           30,
-        ]}% of your Attack Power, Critical strike chance and Stamina.\n\nWhile your pet is active, you will regenerate ${[
-          1,
-          2,
-          3,
+        ]}% of your Attack Power, Critical strike chance and Stamina.\n\nWhile your pet is active, you will regenerate 1% of your total health every ${[
+          10,
+          8,
+          6,
           4,
-          5,
-        ]} of your total health every 5 sec.`, 
+          2,
+        ]} sec.`,
       },
       "Frenzy": {
         name: "Frenzy", 
@@ -313,7 +315,7 @@ export const data: TalentData = {
         icon: icons["spell_frost_wizardmark"], 
         maxRank: 5, 
         reqPoints: 0,
-        description: talentText`Reduces the Mana cost of your Shots and Stings by ${[
+        description: talentText`Reduces the Mana cost of your spells and abilities by ${[
           3,
           6,
           9,
@@ -792,7 +794,7 @@ export const data: TalentData = {
           60,
           80,
           100,
-        ]}% chance to reveal a flaw in your target's defenses, increasing the critical strike chance of attacks made against that target by an additional 3% for 30 seconds.`, 
+        ]}% chance to reveal a flaw in your target\'s defenses, increasing the critical strike chance of attacks made against that target by an additional 5% for 15 seconds.`, 
       },
       "Lightning Reflexes": {
         name: "Lightning Reflexes", 
@@ -814,7 +816,7 @@ export const data: TalentData = {
         icon: icons["inv_axe_08"], 
         maxRank: 1, 
         reqPoints: 30,
-        description: talentText`Hurls an axe at a target, causing damage equal to 10% of your melee attack power and slowing the target's movement speed by 50% for 8 seconds. This attack always crits. It also interrupts spellcasting and prevents any spell in that school from being cast for 4 seconds.`, 
+        description: talentText`Hurls an axe at a target, causing damage equal to 10% of your melee attack power and slowing the target's movement speed by 50% for 10 seconds. This attack always crits. It also interrupts spellcasting and prevents any spell in that school from being cast for 5 seconds.`, 
       },
     },
   },

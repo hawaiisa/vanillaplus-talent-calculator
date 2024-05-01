@@ -207,7 +207,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_forceofnature"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`Transforms the Druid into Moonkin Form, increasing spell critical chance by 2%, Arcane and Nature resistances by 60 and armor contribution from items by 180%. The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.`,
+        description: talentText`Transforms the Druid into Moonkin Form, increasing spell critical chance by 2%, Arcane and Nature resistances by 1 per level and armor contribution from items by 180%. The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.`,
       },
       
       "Nature's Grace": {
@@ -569,7 +569,7 @@ export const data: TalentData = {
           3,
           4,
           5,
-        ]}% of your maximum health. This effect can only occur once every 8 sec.`
+        ]}% of your maximum health. This effect can only occur once every 5 sec.`
       },
 
       "Leader of the Pack": {
@@ -578,7 +578,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_unyeildingstamina"],
         maxRank: 1,
         reqPoints: 30,
-        description: talentText`While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 20 yards by 3%`,
+        description: talentText`Doubles the effects of your Bear and Cat Forms.\n\nAlso, while in Cat or Bear Form, the Leader of the Pack increases ranged and melee critical chance of all raid members within 20 yards by 3%.`,
       },
     },
   },

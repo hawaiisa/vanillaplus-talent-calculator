@@ -127,7 +127,7 @@ export const data: TalentData = {
         reqPoints: 10,
         prereq: "Improved Curse of Agony",
         arrows: [{ dir: "down", from: "b3", to: "c3" }],
-        description: talentText`Increases the effect of your next Curse by 50%. Lasts 30 sec.`,
+        description: talentText`Increases the effect of your next Curse by 50%.  Lasts 10 seconds.`,
       },
       "Improved Drain Soul": {
         name: "Improved Drain Soul",
@@ -228,7 +228,13 @@ export const data: TalentData = {
           15,
           20,
           25,
-        ]}% chance to resist dispel effects.\nAlso, reduces the threat caused and increases the damage of your Curse of Doom by ${[
+        ]}%  chance to resist dispel effects.\nAlso, it reduces the cooldown and duration of your Curse of Doom by ${[
+          10,
+          20,
+          30,
+          40,
+          50,
+        ]}% and increases its damage and threat caused by ${[
           20,
           40,
           60,
@@ -801,7 +807,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_excorcism_02"], 
         maxRank: 1, 
         reqPoints: 20, 
-        description: talentText`When activated, increases the critical strike chance of your next Destruction spell by 100%`, 
+        description: talentText`When activated, increases the critical strike chance of your next Destruction spell by 100%.`, 
       },
       "Shadowstorm ": {
         name: "Shadowstorm ", 
@@ -837,7 +843,7 @@ export const data: TalentData = {
         icon: icons["phoenix"], 
         maxRank: 1, 
         reqPoints: 30, 
-        description: talentText`Stuns the target for 3 sec. While stunned, the target receives an aditional 10% damage from all sources and cannot be healed.`, 
+        description: talentText`Stuns the target for 3 seconds. While stunned, the target receives an additional 10% damage from all sources and cannot be healed.`, 
       },
     },
   },

@@ -198,9 +198,9 @@ export const data: TalentData = {
         maxRank: 3, 
         reqPoints: 15, 
         description: talentText`Allows ${[
-          5,
           10,
-          15,
+          20,
+          30,
         ]}% of your Mana regeneration to continue while casting.`, 
       },
       "Arcane Power": {
@@ -221,9 +221,9 @@ export const data: TalentData = {
         reqPoints: 20,  
         prereq: "Arcane Power", 
         arrows: [{ dir: "right", from: "e2", to: "e3" }], 
-        description: talentText`Increases the critical strike damage bonus of your Arcane spells by ${[
+        description: talentText`Increases the critical strike damage bonus of your spells by ${[
+          25,
           50,
-          100,
         ]}%.`, 
       },
       "Arcane Mind": {
@@ -238,11 +238,11 @@ export const data: TalentData = {
           { dir: "right-down-down", from: "d4", to: "e4" }
         ], 
         description: talentText`Increases your total Intellect by ${[
-          2,
-          4,
+          3,
           6,
-          8,
-          10,
+          9,
+          12,
+          15,
         ]}%.`, 
       },
       "Time Pressure": {
@@ -503,7 +503,7 @@ export const data: TalentData = {
           { dir: "right-down", from: "c2", to: "c3"}, 
           { dir: "right-down-down", from: "c3", to: "e3" }
         ], 
-        description: talentText`Generates Mana equal to your level every 5 seconds.`, 
+        description: talentText`Generates mana equal to your level every 2 sec.`, 
       },
       "Improved Scorch": {
         name: "Improved Scorch", 

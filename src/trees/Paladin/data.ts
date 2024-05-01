@@ -63,6 +63,18 @@ export const data: TalentData = {
           10,
         ]} yards.`, 
       },
+      "Divine Concentration": {
+        name: "Divine Concentration", 
+        pos: "b2", 
+        icon: icons["spell_holy_fanaticism"], 
+        maxRank: 3, 
+        reqPoints: 5,  
+        description: talentText`Regenerates 1% of your total Mana every ${[
+          15,
+          10,
+          5,
+        ]} seconds.`, 
+      },
       "Shield of Faith": {
         name: "Shield of Faith", 
         pos: "b4", 
@@ -121,8 +133,6 @@ export const data: TalentData = {
         icon: icons["spell_holy_innerfire"], 
         maxRank: 1, 
         reqPoints: 10, 
-        prereq: "Improved Purifying", 
-        arrows: [{ dir: "down", from: "b2", to: "c2"}],
         description: talentText`Consecrates the land beneath the Paladin, doing 8 Holy damage to enemies who enter the area.`, 
       },
       "Divine Grace": {
@@ -139,33 +149,23 @@ export const data: TalentData = {
           100,
         ]}%.`, 
       },
-      "Divine Concentration": {
-        name: "Divine Concentration", 
-        pos: "d2", 
-        icon: icons["spell_holy_fanaticism"], 
-        maxRank: 3, 
-        reqPoints: 15, 
-        description: talentText`Regenerates 1% of your total Mana every ${[
-          15,
-          10,
-          5
-         ]} seconds.`, 
-      },
       "Improved Purifying": {
         name: "Improved Purifying", 
-        pos: "b2", 
+        pos: "d2", 
         icon: icons["spell_holy_purifyingpower"], 
         maxRank: 3, 
-        reqPoints: 5,  
-        description: talentText`Reduces the Mana cost of your Cleanse, Purify, Consecration, Exorcism, Holy Wrath, and Hammer of Wrath spells by ${[
+        reqPoints: 15, 
+        prereq: "Consecration", 
+        arrows: [{ dir: "down", from: "c2", to: "d2"}], 
+        description: talentText`Reduces the Mana cost of your Cleanse, Purify, Consecration, Exorcism, Holy Wrath and Hammer of Wrath spells by ${[
           10,
           20,
-          30,
-        ]}% and increases the critical strike chance of your Exorcism, Holy Wrath, and Hammer of Wrath spells by ${[
+          30
+         ]}% and increases the critical strike chance of your Exorcism, Holy Wrath and Hammer of Wrath spells by ${[
           10,
           20,
-          30,
-        ]}%.`, 
+          30
+         ]}%.`, 
       },
       "Illumination": {
         name: "Illumination", 
@@ -415,6 +415,20 @@ export const data: TalentData = {
           5,
         ]}%.`, 
       },
+      "Second Wind": {
+        name: "Second Wind", 
+        pos: "c4", 
+        icon: icons["inv_jewelry_talisman_06"], 
+        maxRank: 5, 
+        reqPoints: 10, 
+        description: talentText`Gives you a ${[
+          20,
+          40,
+          60,
+          80,
+          100,
+        ]}% chance to generate Mana equal to 10% of healing received.`, 
+      },
       "Guardian's Favor": {
         name: "Guardian's Favor", 
         pos: "d1", 
@@ -427,6 +441,18 @@ export const data: TalentData = {
         ]}%. Also increases the duration and reduces the Mana cost of your Blessings of Freedom, Protection, Sacrifice, Salvation, and Sanctuary by ${[
           50,
           100,
+        ]}%.`, 
+      },
+      "Unbreakability": {
+        name: "Unbreakability", 
+        pos: "d3", 
+        icon: icons["inv_shield_20"], 
+        maxRank: 3, 
+        reqPoints: 15, 
+        description: talentText`Decreases damage taken by ${[
+          5,
+          10,
+          15,
         ]}%.`, 
       },
       "Improved Concentration Aura": {
@@ -444,20 +470,6 @@ export const data: TalentData = {
           10,
           15,
         ]}% chance to resist Silence and Interrupt effects.`, 
-      },
-      "Second Wind": {
-        name: "Second Wind", 
-        pos: "c4", 
-        icon: icons["inv_jewelry_talisman_06"], 
-        maxRank: 5, 
-        reqPoints: 10, 
-        description: talentText`Gives you a ${[
-          20,
-          40,
-          60,
-          80,
-          100,
-        ]}% chance to generate Mana equal to 10% of healing received.`, 
       },
       "Improved Righteous Fury": {
         name: "Improved Righteous Fury", 
@@ -480,18 +492,6 @@ export const data: TalentData = {
         prereq: "Blessing of Sanctuary", 
         arrows: [{ dir: "down", from: "c2", to: "e2"}], 
         description: talentText`Increases chance to block by 30% for 10 seconds, and deals 45 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.`, 
-      },
-      "Unbreakability": {
-        name: "Unbreakability", 
-        pos: "d3", 
-        icon: icons["inv_shield_20"], 
-        maxRank: 3, 
-        reqPoints: 15, 
-        description: talentText`Decreases damage taken by ${[
-          4,
-          7,
-          10,
-        ]}%.`, 
       },
       "Morale": {
         name: "Morale", 
@@ -815,7 +815,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_divinepurpose"], 
         maxRank: 1, 
         reqPoints: 30, 
-        description: talentText`Increases the critical strike chance of all Judgements by 30% and makes your Seals and Judgements undispellable.`, 
+        description: talentText`Increases the critical strike chance of all Judgements by 50% and makes your Seals and Judgements undispellable.`, 
       },
     },
   },

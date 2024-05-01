@@ -776,13 +776,13 @@ export const data: TalentData = {
         reqPoints: 25,
         prereq: "One-Handed Weapon Specialization",
         arrows: [{ dir: "down", from: "d3", to: "f3" }],
-        description: talentText`Increases your chances to dodge by ${[
+        description: talentText`Increases your chances to dodge and to get a critical strike by ${[
           1,
           2,
           3,
           4,
           5,
-        ]}%. and makes your dodges and parries generate ${[
+        ]}% and makes your dodges and parries generate ${[
           20,
           40,
           60,
@@ -799,7 +799,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Training and Discipline",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Increases your Strength by up to 1% of your current Health. Also if you have more than 50% of your Health you become immune to Diseases and if more than 75% to Poisons.`,
+        description: talentText`Increases your Strength and Agility by up to 1% of your current Health. Also if you have more than 50% of your Health you become immune to Diseases and if more than 75% to Poisons.`,
       },
     },
   },

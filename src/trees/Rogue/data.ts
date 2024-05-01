@@ -30,10 +30,10 @@ export const data: TalentData = {
         icon: icons["ability_fiegndead"], 
         maxRank: 2, 
         reqPoints: 0, 
-        description: talentText`After killing an opponent that yields experience or honor, you gain a ${[
+        description: talentText`After killing an opponent that yields experience or honor, gives you a ${[
           20,
           40,
-        ]}% increased critical strike chance on your next Sinister Strike, backstab, Ambush, or Ghostly strike. Lasts 30 seconds.`, 
+        ]}% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, or Hemorrhage.  Lasts 30 seconds.`, 
       },
       "Malice": {
         name: "Malice", 
@@ -99,7 +99,7 @@ export const data: TalentData = {
         reqPoints: 10, 
         prereq: "Malice", 
         arrows: [{ dir: "down", from: "a3", to: "c3" }], 
-        description: talentText`Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ambush, Ghostly Strike, and Hemorrhage abilities by ${[
+        description: talentText`Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ambush, and Hemorrhage abilities by ${[
           10,
           20,
           30,
@@ -236,9 +236,9 @@ export const data: TalentData = {
         reqPoints: 25, 
         prereq: "Cold Blood", 
         arrows: [{ dir: "down", from: "e2", to: "f2" }], 
-        description: talentText`Increases the critical strike chance of your Sinister Strike, Gouge, Backstab, Ambush, Ghostly Strike, Hemorrhage and Eviscerate abilities by ${[
-          5,
-          10,
+        description: talentText`Increases the critical strike chance of your Sinister Strike, Gouge, Backstab, Ambush, Hemorrhage and Eviscerate abilities by ${[
+          3,
+          5
         ]}%.`, 
       },
       "Gaining an Advantage": {
@@ -289,8 +289,8 @@ export const data: TalentData = {
         maxRank: 2, 
         reqPoints: 0, 
         description: talentText`Gives you a ${[
-          5,
-          10,
+          3,
+          5
         ]}% chance to land an extra Sinister Strike on the same target.`, 
       },
       "Bitter Experience": {
@@ -532,7 +532,7 @@ export const data: TalentData = {
         icon: icons["spell_shadow_shadowworddominate"], 
         maxRank: 1, 
         reqPoints: 30, 
-        description: talentText`You feel the adrenaline, becoming immune to Fear and Incapacitate effects. Energy regeneration rate is increased by 100%. Lasts 15 sec.`, 
+        description: talentText`You feel the adrenaline, becoming immune to Fear and increasing your melee attack speed by 30% and Energy regeneration rate by 100%. Lasts 15 seconds.`, 
       },
     },
   },
@@ -639,13 +639,13 @@ export const data: TalentData = {
           90,
         ]}% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells.`, 
       },
-      "Ghostly Strike": {
-        name: "Ghostly Strike", 
+      "Camouflage": {
+        name: "Camouflage", 
         pos: "c2", 
-        icon: icons["spell_shadow_curse"], 
+        icon: icons["ability_stealth"], 
         maxRank: 1, 
         reqPoints: 10, 
-        description: talentText`A strike that deals 125% weapon damage and increases your chance to dodge melee attacks, to avoid ranged attacks, or to resist offensive spells by 15% for 5 seconds. Awards 1 combo point.`, 
+        description: talentText`Increases your speed while stealthed by 15% and reduces the cooldown of your Stealth ability by 5 sec.`, 
       },
       "Improved Ambush": {
         name: "Improved Ambush", 
@@ -665,25 +665,19 @@ export const data: TalentData = {
           99,
         ]}%.`, 
       },
-      "Camouflage": {
-        name: "Camouflage", 
+      "Connivery": {
+        name: "Connivery", 
         pos: "c4", 
-        icon: icons["ability_stealth"], 
+        icon: icons["cloak_of_flame"], 
         maxRank: 5, 
         reqPoints: 10, 
-        description: talentText`Increases your speed while stealthed by ${[
-          5,
-          10,
-          15,
-          20,
-          25,
-        ]} and reduces the cooldown of your Stealth ability by ${[
-          1,
+        description: talentText`All attacks from behind deal ${[
           2,
-          3,
           4,
-          5,
-        ]} sec.`, 
+          6,
+          8,
+          10,
+        ]}% more damage.`, 
       },
       "Heightened Senses": {
         name: "Heightened Senses", 
@@ -702,12 +696,13 @@ export const data: TalentData = {
         icon: icons["spell_magic_lesserinvisibilty"], 
         maxRank: 2, 
         reqPoints: 15, 
-        prereq: "Ghostly Strike", 
-        arrows: [{ dir: "down", from: "c2", to: "d2" }], 
         description: talentText`Reduces the cooldown of your Evasion, Vanish and Blind by ${[
           1,
           2,
-        ]} min.`, 
+        ]} min and increases your Dodge chance by ${[
+          3,
+          5
+        ]}%.`, 
       },
       "Serrated Blades": {
         name: "Serrated Blades", 
@@ -719,11 +714,11 @@ export const data: TalentData = {
           100,
           200,
           300,
-        ]} of your target's Armor and increases the duration of your Garrote and Rupture ablities by ${[
-          2,
-          4,
-          6,
-        ]} sec. The amount of Armor reduced increases with your level.`, 
+        ]} of your target's Armor and increases the damage of your Garrote and Rupture abilities by ${[
+          10,
+          20,
+          30,
+        ]}%. The amount of Armor reduced increases with your level.`, 
       },
       "Cloak of Shadows": {
         name: "Cloak of Shadows", 
@@ -739,11 +734,15 @@ export const data: TalentData = {
         icon: icons["spell_shadow_summonsuccubus"], 
         maxRank: 3, 
         reqPoints: 20, 
-        description: talentText`Reduces the Energy cost of your Cheap Shot and Garrote abilities by ${[
+        description: talentText`Reduces the Energy cost of your Ambush, Cheap Shot and Garrote abilities by ${[
           10,
           20,
           30,
-        ]}.`, 
+        ]}.\n\nIn addition, adds your Ambush and Backstab abilities a ${[
+          30,
+          60,
+          90
+        ]}% chance to apply your current rank of Hemorrhage debuff.`, 
       },
       "Hemorrhage": {
         name: "Hemorrhage", 
@@ -754,7 +753,7 @@ export const data: TalentData = {
           { dir: "right-down", from: "d3", to: "d4" }, 
           { dir: "right-down-down", from: "d4", to: "e4" },
         ], 
-        description: talentText`An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 7. Lasts 30 charges or 15 seconds. Awards 1 combo point.`, 
+        description: talentText`An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 7.  Lasts 15 seconds.  Awards 1 combo point.`, 
       },
       "Brigandage": {
         name: "Brigandage", 
@@ -762,13 +761,13 @@ export const data: TalentData = {
         icon: icons["inv_sword_11"], 
         maxRank: 5, 
         reqPoints: 25, 
-        description: talentText`Your auto attacks drain ${[
-          0.3,
-          0.6,
-          0.9,
-          1.2,
-          1.5,
-        ]} per level amount of Mana from a target. For each mana drained this way, the target takes 0.3 Shadow Damage.`, 
+        description: talentText`Your auto attacks have a ${[
+          20,
+          40,
+          60,
+          80,
+          100,
+        ]}% chance to deal 0.5 per level Shadow damage and to drain x3 ammount of Mana, 5 Energy or 3 Rage.`, 
       },
       "Deadliness": {
         name: "Deadliness", 
