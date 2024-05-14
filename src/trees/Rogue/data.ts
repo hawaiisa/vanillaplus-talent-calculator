@@ -253,7 +253,7 @@ export const data: TalentData = {
           60,
           80,
           100,
-        ]}% chance to reduce the target's stats by 1% and increase your Agility by 1%. Lasts 15 seconds, stacks up to 30 times.`, 
+        ]}% chance to reduce the target's stats by 1% and increase your Agility by 1%. Lasts 15 seconds, stacks up to 20 times.`, 
       },
       "Vigor": {
         name: "Vigor", 
