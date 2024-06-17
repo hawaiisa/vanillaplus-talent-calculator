@@ -507,7 +507,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_mirrorimage"], 
         maxRank: 3, 
         reqPoints: 20, 
-        description: talentText`Increases your stealth detection and reduces the chence you are hit by spells and ranged attakcs by ${[
+        description: talentText`Increases your stealth detection and reduces the chance you are hit by spells and ranged attacks by ${[
           2,
           4,
           6,
