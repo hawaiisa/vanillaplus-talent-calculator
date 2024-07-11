@@ -770,7 +770,7 @@ export const data: TalentData = {
           60,
           80,
           100,
-        ]}% chance to cause your target to be vulnerable by 1%, lasting 20 seconds. Stacks up to 10 times.`, 
+        ]}% chance to cause your target to be vulnerable to Shadow damage. This vulnerability increases the Shadow damage dealt to your target by 2% and lasts 15 seconds. Stacks up to 10 times.`, 
       },
       "Shadowform": {
         name: "Shadowform", 

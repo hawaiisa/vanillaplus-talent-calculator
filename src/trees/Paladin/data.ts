@@ -52,6 +52,20 @@ export const data: TalentData = {
           10,
         ]}%.`, 
       },
+      "Improved Lay on Hands": {
+        name: "Improved Lay on Hands", 
+        pos: "a4", 
+        icon: icons["spell_holy_layonhands"], 
+        maxRank: 2, 
+        reqPoints: 0, 
+        description: talentText`Gives the target of your Lay on Hands spell a 30% bonus to their resistance and armor value from items for${[
+          60,
+          120
+        ]} seconds. In addition, the cooldown for you Lay on Hands spell is reduced by ${[
+          15,
+          30,
+        ]} min.`, 
+      },
       "Aura Mastery": {
         name: "Aura Mastery", 
         pos: "b1", 
@@ -75,18 +89,6 @@ export const data: TalentData = {
           5,
         ]} seconds.`, 
       },
-      "Shield of Faith": {
-        name: "Shield of Faith", 
-        pos: "b4", 
-        icon: icons["spell_holy_holyguidance"], 
-        maxRank: 3, 
-        reqPoints: 5, 
-        description: talentText`Reduces all spell damage taken by ${[
-          5,
-          10,
-          15,
-        ]}%.`, 
-      },
       "Holy Power": {
         name: "Holy Power", 
         pos: "b3", 
@@ -101,19 +103,17 @@ export const data: TalentData = {
           5,
         ]}%.`, 
       },
-      "Improved Lay on Hands": {
-        name: "Improved Lay on Hands", 
-        pos: "a4", 
-        icon: icons["spell_holy_layonhands"], 
-        maxRank: 2, 
-        reqPoints: 0, 
-        description: talentText`Gives the target of your Lay on Hands spell a 30% bonus to their resistance and armor value from items for${[
-          60,
-          120
-        ]} seconds. In addition, the cooldown for you Lay on Hands spell is reduced by ${[
+      "Shield of Faith": {
+        name: "Shield of Faith", 
+        pos: "b4", 
+        icon: icons["spell_holy_holyguidance"], 
+        maxRank: 3, 
+        reqPoints: 5, 
+        description: talentText`Reduces all spell damage taken by ${[
+          5,
+          10,
           15,
-          30,
-        ]} min.`, 
+        ]}%.`, 
       },
       "Spiritual Focus": {
         name: "Spiritual Focus", 
@@ -144,7 +144,7 @@ export const data: TalentData = {
         description: talentText`Increases the effect of your Seal and Judgement of Light, your Seal and Judgement of Wisdom, you Blessing of Wisdom, and your Blessing of Light by ${[
           10,
           20,
-        ]}%. In addition, increases the duration and reduces the cost of your Blessing of Wisdowm and Blessing of Light by ${[
+        ]}%.\n\nIn addition, increases the duration and reduces the cost of your Blessing of Wisdowm and Blessing of Light by ${[
           50,
           100,
         ]}%.`, 
@@ -286,6 +286,22 @@ export const data: TalentData = {
     background: backgrounds["protection"],
     icon: icons["spell_holy_devotionaura"],
     talents: {
+      "Improved Hammer of Justice": {
+        name: "Improved Hammer of Justice", 
+        pos: "a1", 
+        icon: icons["spell_holy_sealofmight"], 
+        maxRank: 3, 
+        reqPoints: 0, 
+        description: talentText`Increases the duration of your Hammer of Justice spell by ${[
+          0.5,
+          1,
+          1.5,
+        ]} sec and reduces its cooldown by ${[
+          10,
+          20,
+          30,
+        ]}%.`,
+      },
       "Toughness": {
         name: "Toughness", 
         pos: "a2", 
@@ -304,14 +320,11 @@ export const data: TalentData = {
         name: "Shield Specialization", 
         pos: "a3", 
         icon: icons["inv_shield_06"],
-        maxRank: 5, 
+        maxRank: 2, 
         reqPoints: 0, 
         description: talentText`Increases the amount of damage absorbed by your shield by ${[
-          10,
-          20,
+          15,
           30,
-          40,
-          50,
         ]}%.`, 
       },
       "Vindication": {
@@ -353,21 +366,19 @@ export const data: TalentData = {
           20,
         ]}% chance when hit to gain a 30% chance to block attacks for 15 seconds of 5 blocks. Critical hits grants this effect five times more often.`, 
       },
-      "Improved Hammer of Justice": {
-        name: "Improved Hammer of Justice", 
+      "Precision": {
+        name: "Precision", 
         pos: "b4", 
-        icon: icons["spell_holy_sealofmight"], 
-        maxRank: 3, 
-        reqPoints: 5, 
-        description: talentText`Increases the duration of your Hammer of Justice spell by ${[
-          0.5,
+        icon: icons["ability_rogue_ambush"], 
+        maxRank: 5,
+        reqPoints: 5,
+        description: talentText`Increases your chance to hit with melee attack and spells by ${[
           1,
-          1.5,
-        ]} sec and reduces its cooldown by ${[
-          10,
-          20,
-          30,
-        ]}%.`,
+          2,
+          3,
+          4,
+          5,
+        ]}%.`, 
       },
       "Dominance": {
         name: "Dominance", 
@@ -387,33 +398,21 @@ export const data: TalentData = {
         reqPoints: 10, 
         description: talentText`Places a Blessing on the friendly target, reducing the damage dealt from all sources by up to 10 for 300 seconds. In addition, when the target blocks a melee attack, the attacker will take 10 holy damage. Players may only have one Blessing on them per Paladin at any one time.`, 
       },
-      "One-Handed Weapon Specialization": {
-        name: "One-Handed Weapon Specialization", 
-        pos: "e3", 
-        icon: icons["inv_sword_20"], 
-        maxRank: 5, 
-        reqPoints: 20, 
-        description: talentText`Increases the damage you deal with one-handed melee weapons by ${[
-          3,
-          6,
-          9,
-          12,
-          15,
-        ]}%.`, 
-      },
-      "Precision": {
-        name: "Precision", 
+      "Improved Concentration Aura": {
+        name: "Improved Concentration Aura", 
         pos: "c3", 
-        icon: icons["ability_rogue_ambush"], 
-        maxRank: 5,
-        reqPoints: 10,
-        description: talentText`Increases your chance to hit with melee attack and spells by ${[
-          1,
-          2,
-          3,
-          4,
+        icon: icons["spell_holy_mindsooth"], 
+        maxRank: 3, 
+        reqPoints: 10, 
+        description: talentText`Increases the effect of your Concentration Aura by an additional ${[
           5,
-        ]}%.`, 
+          10,
+          15,
+        ]}% and gives all group members affected by the aura an additional ${[
+          5,
+          10,
+          15,
+        ]}% chance to resist Silence and Interrupt effects.`, 
       },
       "Second Wind": {
         name: "Second Wind", 
@@ -443,9 +442,23 @@ export const data: TalentData = {
           100,
         ]}%.`, 
       },
+      "One-Handed Weapon Specialization": {
+        name: "One-Handed Weapon Specialization", 
+        pos: "d3", 
+        icon: icons["inv_sword_20"], 
+        maxRank: 5, 
+        reqPoints: 15, 
+        description: talentText`Increases the damage you deal with one-handed melee weapons by ${[
+          2,
+          4,
+          6,
+          8,
+          10,
+        ]}%.`, 
+      },
       "Unbreakability": {
         name: "Unbreakability", 
-        pos: "d3", 
+        pos: "d4", 
         icon: icons["inv_shield_20"], 
         maxRank: 3, 
         reqPoints: 15, 
@@ -455,33 +468,21 @@ export const data: TalentData = {
           15,
         ]}%.`, 
       },
-      "Improved Concentration Aura": {
-        name: "Improved Concentration Aura", 
-        pos: "d4", 
-        icon: icons["spell_holy_mindsooth"], 
-        maxRank: 3, 
-        reqPoints: 15, 
-        description: talentText`Increases the effect of your Concentration Aura by an additional ${[
-          5,
-          10,
-          15,
-        ]}% and gives all group members affected by the aura an additional ${[
-          5,
-          10,
-          15,
-        ]}% chance to resist Silence and Interrupt effects.`, 
-      },
-      "Improved Righteous Fury": {
-        name: "Improved Righteous Fury", 
+      "Improved Holy Shield": {
+        name: "Improved Holy Shield", 
         pos: "e1", 
-        icon: icons["spell_holy_sealoffury"], 
-        maxRank: 3, 
+        icon: icons["spell_holy_blessingofprotection"], 
+        maxRank: 2, 
         reqPoints: 20, 
-        description: talentText`Increase the amount of threat generated while under the effect of Righteous Fury by ${[
+        prereq: "Holy Shield", 
+        arrows: [{ dir: "left", from: "e1", to: "e2" }],
+        description: talentText`Allows your Holy Shield to block an additional ${[
+          2,
+          4,
+        ]} attacks and increases its duration by ${[
+          5,
           10,
-          20,
-          30,
-        ]}%.`, 
+        ]} seconds.`, 
       },
       "Holy Shield": {
         name: "Holy Shield", 
@@ -492,6 +493,18 @@ export const data: TalentData = {
         prereq: "Blessing of Sanctuary", 
         arrows: [{ dir: "down", from: "c2", to: "e2"}], 
         description: talentText`Increases chance to block by 30% for 10 seconds, and deals 45 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.`, 
+      },
+      "Improved Righteous Fury": {
+        name: "Improved Righteous Fury", 
+        pos: "e4", 
+        icon: icons["spell_holy_sealoffury"], 
+        maxRank: 3, 
+        reqPoints: 20, 
+        description: talentText`Increase the amount of threat generated while under the effect of Righteous Fury by ${[
+          10,
+          20,
+          30,
+        ]}%.`, 
       },
       "Morale": {
         name: "Morale", 
@@ -513,22 +526,6 @@ export const data: TalentData = {
           20,
         ]}% chance to restore 125 Mana.`, 
       },
-      "Improved Holy Shield": {
-        name: "Improved Holy Shield", 
-        pos: "f2", 
-        icon: icons["spell_holy_blessingofprotection"], 
-        maxRank: 2, 
-        reqPoints: 25, 
-        prereq: "Holy Shield", 
-        arrows: [{ dir: "down", from: "e2", to: "f2" }], 
-        description: talentText`Allows your Holy Shield to block an additional ${[
-          2,
-          4,
-        ]} attacks and increases its duration by ${[
-          5,
-          10,
-        ]} seconds.`, 
-      },
       "Reckoning": {
         name: "Reckoning", 
         pos: "f3", 
@@ -536,7 +533,7 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 25,
         prereq: "One-Handed Weapon Specialization", 
-        arrows: [{ dir: "down", from: "e3", to: "f3" }], 
+        arrows: [{ dir: "down", from: "d3", to: "f3" }], 
         description: talentText`Gives you a ${[
           4,
           8,
@@ -587,7 +584,8 @@ export const data: TalentData = {
         ]}%.`, 
       },
       "Improved Seal of the Crusader": {
-        name: "Improved Seal of the Crusader", pos: "a3", 
+        name: "Improved Seal of the Crusader", 
+        pos: "a3", 
         icon: icons["spell_holy_holysmite"], 
         maxRank: 3, reqPoints: 0, 
         description: talentText`Increases the Holy damage and melee attack power bonuses of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by ${[
@@ -737,7 +735,7 @@ export const data: TalentData = {
           60,
           80,
           100,
-        ]}% chance to increase damage you deal by 3% for 15 sec. Stacks up to 5 times.`, 
+        ]}% chance to increase damage you deal by 2% for 15 sec. Stacks up to 10 times.`, 
       },
       "Repentance": {
         name: "Repentance", 
@@ -754,12 +752,12 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 25,
         description: talentText`Causes your attacks to ignore up to ${[
-          120,
-          240,
+          180,
           360,
-          480,
-          600,
-        ]} of your target's Armor. The amount of Armor reduced scales with your level. Also, reduces the threat caused by all actions by ${[
+          540,
+          720,
+          900,
+        ]} of your target\'s Armor. The amount of Armor reduced scales with your level. Also, reduces threat caused by all actions by ${[
           4,
           8,
           12,

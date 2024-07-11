@@ -158,7 +158,7 @@ export const data: TalentData = {
         reqPoints: 10, 
         prereq: "Master of Elements", 
         arrows: [{ dir: "down", from: "b3", to: "c3" }], 
-        description: talentText`Your Fire combat spells increases your chance to get a critical strike chance with your next Frost damage spell by 15%\n\nYour Frost combat spells increases your chance to get a critical strike chance with your next Fire damage spell by 15%.\n\nYour Arcane combat spells increases your chance to get a critical strike chance with your next  Fire or Frost damage spell by 15%.`, 
+        description: talentText`Your Fire combat spells increases your chance to get a critical strike chance with your next Frost damage spell by 15%.\n\nYour Frost combat spells increases your chance to get a critical strike chance with your next Fire damage spell by 15%.\n\nYour Arcane combat spells increases your chance to get a critical strike chance with your next  Fire or Frost damage spell by 15%.`, 
       },
       "Practical Offensive Magic": {
         name: "Practical Offensive Magic", 
