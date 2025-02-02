@@ -356,7 +356,7 @@ export const data: TalentData = {
         reqPoints: 10,
         prereq: "Booming Voice",
         arrows: [{ dir: "down", from: "a2", to: "c2" }],
-        description: talentText`Causes all enemies near the warrior to be dazed, reducing movement speed by 50% for 6 sec.`,
+        description: talentText`Slows the movement speed of nearby enemies by 50% for 6 seconds. Causes a high amount of threat.`,
       },
       "Blood Craze": {
         name: "Blood Craze",
