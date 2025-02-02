@@ -96,9 +96,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 10,
         description: talentText`Increases the duration of your Hamstring by ${[
-          3,
+          2,
+          4,
           6,
-          9,
         ]}.`,
       },
       "Anger Management": {
@@ -660,7 +660,7 @@ export const data: TalentData = {
         reqPoints: 10,
         prereq: "Improved Revenge",
         arrows: [{ dir: "down", from: "b4", to: "c4" }],
-        description: talentText`A brutal strike that deals weapon damage and stuns the opponent for 4 sec. This ability causes a high amount of threat.`,
+        description: talentText`A brutal strike that stuns the opponent for 4 sec. This ability causes a high amount of threat.`,
       },
       "Mocker": {
         name: "Mocker",
@@ -783,11 +783,11 @@ export const data: TalentData = {
           4,
           5,
         ]}% and makes your dodges and parries generate ${[
-          20,
-          40,
-          60,
-          80,
+          50,
           100,
+          150,
+          200,
+          250,
         ]}% of Rage.`,
       },
                   

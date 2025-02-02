@@ -234,7 +234,7 @@ export const data: TalentData = {
           30,
           40,
           50,
-        ]}% and increases its damage and threat caused by ${[
+        ]}%, increases its damage and reduces threat caused by ${[
           20,
           40,
           60,
@@ -629,10 +629,10 @@ export const data: TalentData = {
         maxRank: 3, 
         reqPoints: 0, 
         description: talentText`Gives your Destruction spells a ${[
-          5,
           10,
-          15,
-        ]}% chance to daze the target for 10 sec.`, 
+          20,
+          30,
+        ]}% chance to daze the target for 5 sec.`, 
       },
       "Cataclysm": {
         name: "Cataclysm", 
@@ -843,7 +843,7 @@ export const data: TalentData = {
         icon: icons["phoenix"], 
         maxRank: 1, 
         reqPoints: 30, 
-        description: talentText`Stuns the target for 3 seconds. While stunned, the target receives an additional 10% damage from all sources and cannot be healed.`, 
+        description: talentText`Stuns the target for 4 seconds. While stunned, the target receives an additional 10% damage from all sources and cannot be healed.`, 
       },
     },
   },
