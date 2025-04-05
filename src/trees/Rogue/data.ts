@@ -210,9 +210,9 @@ export const data: TalentData = {
         prereq: "Improved Kidney Shot", 
         arrows: [{ dir: "right", from: "e3", to: "e4" }], 
         description: talentText`Increases the duration of your control effects by ${[
-          0.5,
-          1,
-        ]} sec.`, 
+          10,
+          20,
+        ]}%.`, 
       },
       "Seal Fate": {
         name: "Seal Fate", 
