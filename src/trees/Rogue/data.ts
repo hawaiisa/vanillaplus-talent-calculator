@@ -192,9 +192,9 @@ export const data: TalentData = {
         maxRank: 3, 
         reqPoints: 20, 
         description: talentText`While affected by you Kidney Shot ability, the target receives an additional ${[
-          3,
-          6,
-          9,
+          5,
+          10,
+          15,
         ]}% damage from all sources. In addition, decreases the cooldown of your Kidney Shot ability by ${[
           5,
           10,
