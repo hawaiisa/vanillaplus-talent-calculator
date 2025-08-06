@@ -696,7 +696,7 @@ export const data: TalentData = {
         icon: icons["spell_magic_lesserinvisibilty"], 
         maxRank: 2, 
         reqPoints: 15, 
-        description: talentText`Reduces the cooldown of your Evasion, Vanish and Blind by ${[
+        description: talentText`Reduces the cooldown of your Evasion and Vanish by ${[
           1,
           2,
         ]} min and increases your Dodge chance by ${[

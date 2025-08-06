@@ -483,9 +483,9 @@ export const data: TalentData = {
         maxRank: 3, 
         reqPoints: 20,
         description: talentText`Increases the damage done by your Multi-Shot and Volley spells by ${[
-          5,
           10,
-          15,
+          20,
+          30,
         ]}%.`, 
       },
       "Scatter Shot": {
@@ -506,7 +506,7 @@ export const data: TalentData = {
       },
       "Reconnaissance": {
         name: "Reconnaissance", 
-        pos: "f1", 
+        pos: "f2", 
         icon: icons["ability_hunter_pathfinding"], 
         maxRank: 5, 
         reqPoints: 25,
@@ -538,8 +538,6 @@ export const data: TalentData = {
         icon: icons["ability_trueshot"], 
         maxRank: 1, 
         reqPoints: 30, 
-        prereq: "Barrage", 
-        arrows: [{ dir: "down", from: "e2", to: "g2" }], 
         description: talentText`Increases the ranged attack power of party member withing 30 yards by 100 and melee attack power by 50.`, 
       },
     },
@@ -619,11 +617,11 @@ export const data: TalentData = {
           8,
           10,
         ]}%. In addition, cures 1 Poison effect on you every ${[
-          60,
-          45,
+          40,
           30,
+          25,
           20,
-          10,
+          15,
         ]}`, 
       },
       "Improved Wing Clip": {
@@ -702,11 +700,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 10,
         description: talentText`While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids and Undead, all damage caused to those types by the Hunter is increased by ${[
-          2,
-          4,
+          3,
           6,
-          8,
-          10,
+          9,
+          12,
+          15,
         ]}%. Also increases the effectiveness of Track Hidden.`, 
       },
       "Trapper": {
@@ -744,7 +742,7 @@ export const data: TalentData = {
           10,
           20,
           30,
-        ]}% chance to restore 120 mana.`, 
+        ]}% chance to restore Mana equal to triple your level.`, 
       },
       "Deep Freeze": {
         name: "Deep Freeze", 
@@ -753,9 +751,9 @@ export const data: TalentData = {
         maxRank: 3, 
         reqPoints: 20,
         description: talentText`Physical attacks against the target, affected by your Freezing Trap, have an additional ${[
-          10,
-          20,
+          15,
           30,
+          45,
         ]}% chance to be critical. In addition, increases the movement speed reduction of your Frost Trap by ${[
           10,
           20,

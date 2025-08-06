@@ -444,7 +444,7 @@ export const data: TalentData = {
           5,
           10,
           15,
-        ]}%, reduces the chance enemies have to detect you while Prowling and increases the duration of your Tiger's Fury and Challenging Roar abilities by ${[
+        ]}%, reduces the chance enemies have to detect you while Prowling and increases the duration of your Tiger's Fury, Grizzly's Fury and Challenging Roar abilities by ${[
           3,
           6,
           9,
@@ -513,8 +513,8 @@ export const data: TalentData = {
           200,
           300,
         ]}% of your level. Also, increases Attack Rating skill by ${[
-          3,
-          6,
+          4,
+          7,
           10,
         ]}.`,
       },
@@ -694,13 +694,16 @@ export const data: TalentData = {
           20,
         ]} Rage.`,
       },
-      "Revive": {
-        name: "Revive",
+
+      "Nature's Swiftness": {
+        name: "Nature's Swiftness",
         pos: "c1",
-        icon: icons["revive"],
+        icon: icons["spell_nature_ravenform"],
         maxRank: 1,
         reqPoints: 10,
-        description: talentText`Returns the spirit to the body, restoring a dead target to life with 20% of their health and mana. Cannot be cast when in combat.`
+        prereq: "Naturalist",
+        arrows: [{ dir: "down", from: "b1", to: "c1" }],
+        description: talentText`When activated, your next spell becomes an instant cast spell.`,
       },
 
       "Omen of Clarity": {
@@ -797,18 +800,9 @@ export const data: TalentData = {
         ]}% chance to resist dispel effects.`,
       },
 
-      "Nature's Swiftness": {
-        name: "Nature's Swiftness",
-        pos: "e1",
-        icon: icons["spell_nature_ravenform"],
-        maxRank: 1,
-        reqPoints: 20,
-        description: talentText`When activated, your next spell becomes an instant cast spell.`,
-      },
-
       "Tranquil Spirit": {
         name: "Tranquil Spirit",
-        pos: "e2",
+        pos: "e1",
         icon: icons["spell_holy_elunesgrace"],
         maxRank: 5,
         reqPoints: 20,
@@ -825,6 +819,15 @@ export const data: TalentData = {
           80,
           100,
         ]}%.`,
+      },
+      
+      "Swiftmend": {
+        name: "Swiftmend",
+        pos: "e2",
+        icon: icons["inv_relics_idolofrejuvenation"],
+        maxRank: 1,
+        reqPoints: 20,
+        description: talentText`Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.`,
       },
 
       "Catharsis": {
@@ -876,15 +879,15 @@ export const data: TalentData = {
         ]}%.`,
       },
 
-      "Swiftmend": {
-        name: "Swiftmend",
+      "Swiftbloom": {
+        name: "Swiftbloom",
         pos: "g2",
-        icon: icons["inv_relics_idolofrejuvenation"],
+        icon: icons["classic_spell_nature_healingway"],
         maxRank: 1,
         reqPoints: 30,
-        prereq: "Tranquil Spirit",
+        prereq: "Swiftmend",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.`,
+        description: talentText`Reduces the global cooldown of your spells by 0.5 sec.`,
       },
     },
   },

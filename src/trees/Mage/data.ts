@@ -143,11 +143,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 10, 
         description: talentText`Gives you a ${[
-          3,
+          2,
+          4,
           6,
-          9,
-          12,
-          15,
+          8,
+          10,
         ]}% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the Mana cost of your next damage spell by 100%.`, 
       },
       "Spell Twisting": {
@@ -169,7 +169,7 @@ export const data: TalentData = {
       description: talentText`Gives your Counterspell a ${[
         50,
         100,
-      ]}% chance to silence the target for 4 seconds, reduces the cooldown of your Counterspell and Blink by ${[
+      ]}% chance to silence the target for 6 seconds, reduces the cooldown of your Counterspell and Blink by ${[
         10,
         20,
       ]}%, and increases the radius of your Arcane Explosion by ${[
@@ -221,9 +221,9 @@ export const data: TalentData = {
         reqPoints: 20,  
         prereq: "Arcane Power", 
         arrows: [{ dir: "right", from: "e2", to: "e3" }], 
-        description: talentText`Increases the critical strike damage bonus of your spells by ${[
-          25,
+        description: talentText`Increases the critical strike damage bonus of your Arcane spells by ${[
           50,
+          100,
         ]}%.`, 
       },
       "Arcane Mind": {
@@ -288,11 +288,11 @@ export const data: TalentData = {
           20,
           25,
         ]}% of your total Intellect and increases the effect of your Arcane Intellect by ${[
-          5,
-          10,
-          15,
           20,
-          25,
+          40,
+          60,
+          80,
+          100,
         ]}%.`, 
       },
       "Brilliance Aura": {
@@ -301,7 +301,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_brilliance"], 
         maxRank: 1, 
         reqPoints: 30, 
-        description: talentText`Generates 1% of total Mana every 10 sec to all party members within 30 yards.`, 
+        description: talentText`Generates 1% of total Mana every 5 sec to all party members within 30 yards.`, 
       },
     },
   },
@@ -474,7 +474,7 @@ export const data: TalentData = {
         reqPoints: 20, 
         prereq: "Critical Mass", 
         arrows: [{ dir: "down", from: "c1", to: "e1" }], 
-        description: talentText`While active, your Fireball spells strike an additional nearby target. Maintaining this effect may harm your body an soul.`, 
+        description: talentText`While active, your Fire spells strike an additional nearby target. Maintaining this effect may harm your body an soul.`, 
       },
       "Overheat": {
         name: "Overheat", 
@@ -515,7 +515,7 @@ export const data: TalentData = {
           33,
           66,
           99,
-        ]}% chance to cause your target to be voulnerable to Fire damage dealt to your target by 1% and lasts 30 seconds. Stacks up to 10 times.`, 
+        ]}% chance to cause your target to be voulnerable to Fire damage dealt to your target by 2% and lasts 15 seconds. Stacks up to 10 times.`, 
       },
       "Ignite": {
         name: "Ignite", 
@@ -662,23 +662,15 @@ export const data: TalentData = {
           10,
         ]} sec.`, 
       },
-      "Frost Channeling": {
-        name: "Frost Channeling", 
+      "Cold Blood": {
+        name: "Cold Blood", 
         pos: "b4", 
-        icon: icons["spell_frost_stun"], 
-        maxRank: 5, 
+        icon: icons["inv_misc_rune_09"], 
+        maxRank: 3, 
         reqPoints: 5, 
-        description: talentText`Reduces the Mana cost of your Frost spells by ${[
-          3,
-          6,
-          9,
-          12,
-          15,
-        ]}% and reduces the threat caused by your Frost spells by ${[
-          6,
-          12,
-          18,
-          24,
+        description: talentText`increases your chance to resist Silence and Interrupt effects by an additional ${[
+          10,
+          20,
           30,
         ]}%.`, 
       },
@@ -698,25 +690,33 @@ export const data: TalentData = {
         icon: icons["spell_shadow_darkritual"], 
         maxRank: 2, 
         reqPoints: 10, 
-        description: talentText`Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold by ${[
+        description: talentText`Increases the range and the radius of your Frost spells by ${[
           10,
           20,
         ]}%.`, 
       },
-      "Improved Blizzard": {
-        name: "Improved Blizzard", 
+      "Frost Channeling": {
+        name: "Frost Channeling", 
         pos: "c4", 
-        icon: icons["spell_frost_icestorm"], 
-        maxRank: 3, 
-        reqPoints: 10, 
-        description: talentText`Adds a chill effect to you Blizzard spell. This effect lowers the target's movement speed by ${[
+        icon: icons["spell_frost_stun"], 
+        maxRank: 5, 
+        reqPoints: 5, 
+        description: talentText`Reduces the Mana cost of your Frost spells by ${[
+          3,
+          6,
+          9,
+          12,
+          15,
+        ]}% and reduces the threat caused by your Frost spells by ${[
+          6,
+          12,
+          18,
+          24,
           30,
-          40,
-          50,
-        ]}%. Lasts 2 seconds.`, 
+        ]}%.`, 
       },
-      "Ice Shards": {
-        name: "Ice Shards", 
+      "Frost Shards": {
+        name: "Frost Shards", 
         pos: "d2", 
         icon: icons["spell_frost_iceshard"], 
         maxRank: 5, 
@@ -743,21 +743,22 @@ export const data: TalentData = {
           30,
         ]}%.`, 
       },
-      "Improved Cone of Cold": {
-        name: "Improved Cone of Cold", 
+      "Cold Grip": {
+        name: "Cold Grip", 
         pos: "d4", 
         icon: icons["spell_frost_glacier"], 
-        maxRank: 3, 
+        maxRank: 2, 
         reqPoints: 15, 
-        description: talentText`Increases the damage dealt by your Cone of Cold spell by ${[
+        description: talentText`Increases the damage dealt by your Cone of Cold and Ice Shards by ${[
           15,
+          30,
+        ]}% and reduces the cooldown of Cone of Cold and Cold Snap by ${[
           25,
-          35,
-        ]}% and reduces its cooldown by ${[
-          5,
-          10,
-          15,
-        ]} sec.`, 
+          50,
+        ]}%. In addition, your Blizzard spell chills targets, reducing their movement speed by ${[
+          25,
+          50,
+        ]}% for 2 sec.`, 
       },
       "Ice Mirror": {
         name: "Ice Mirror", 
@@ -769,12 +770,14 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "c1", to: "e1"}], 
         description: talentText`Protect the firendly target with a mirror of ice. The mirror reflects spells cast for 5 seconds.`, 
       },
-      "Cold Snap": {
-        name: "Cold Snap", 
+      "Ice Shards": {
+        name: "Ice Shards", 
         pos: "e2", 
-        icon: icons["spell_frost_wizardmark"], 
+        icon: icons["spell_frost_frostbolt"], 
         maxRank: 1, 
         reqPoints: 20, 
+        prereq: "Frost Shards", 
+        arrows: [{ dir: "down", from: "d2", to: "e2"}], 
         description: talentText`When activated, this spell finishes the cooldown on all your Frost spells.`, 
       },
       "Icing": {
@@ -793,16 +796,16 @@ export const data: TalentData = {
       },
       "Lord of the North Wind": {
         name: "Lord of the North Wind", 
-        pos: "f1", 
+        pos: "f2", 
         icon: icons["spell_frost_manarecharge"], 
         maxRank: 5, 
         reqPoints: 25, 
         description: talentText`Increases the critical strike chance of your Frost spells by ${[
-          1,
           2,
-          3,
           4,
-          5,
+          6,
+          8,
+          10,
         ]}% and the chance you are hit by melee and ranged attacks reduced by ${[
           1,
           2,
@@ -823,7 +826,7 @@ export const data: TalentData = {
           60,
           80,
           100,
-        ]}% chance to apply the Winters Chill effect, which increases the chance a Frost spell will critically hit the target by 1% for 20 seconds. Stacks up to 10 times.`, 
+        ]}% chance to apply the Winters Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 seconds. Stacks up to 10 times.`, 
       },
       "Ice Barrier": {
         name: "Ice Barrier", 
@@ -831,8 +834,6 @@ export const data: TalentData = {
         icon: icons["spell_ice_lament"], 
         maxRank: 1, 
         reqPoints: 30, 
-        prereq: "Cold Snap", 
-        arrows: [{ dir: "down", from: "e2", to: "g2" }], 
         description: talentText`Instantly shields a friendly target, absorbing 548 damage. Lasts 60 seconds. While the shield holds, spells will not be interrupted.`, 
       },
       "Advanced Ice Shielding": {

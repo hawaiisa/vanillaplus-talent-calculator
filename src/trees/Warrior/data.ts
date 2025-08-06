@@ -335,7 +335,7 @@ export const data: TalentData = {
           15,
           20,
           25,
-        ]}% chance to generate an 5 Rage points when you swing or take damage.`,
+        ]}% chance to generate an 5 Rage points when you deal melee damage with a weapon.`,
       },
       "Improved Cleave": {
         name: "Improved Cleave",
@@ -418,7 +418,7 @@ export const data: TalentData = {
           3,
           4,
           5,
-        ]}% melee damage bonus for 20 sec after being the victim of a critical strike. Stacks up to 10 times.`,
+        ]}% melee damage bonus for 15 sec after being the victim of a critical strike. Stacks up to 10 times.`,
       },
       "Improved Slam": {
         name: "Improved Slam",
