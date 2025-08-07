@@ -569,7 +569,7 @@ export const data: TalentData = {
           3,
           4,
           5,
-        ]}% of your maximum health. This effect can only occur once every 5 sec.`
+        ]}% of your maximum health. This effect can only occur once every 3 sec.`
       },
 
       "Leader of the Pack": {
