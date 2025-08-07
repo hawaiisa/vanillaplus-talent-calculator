@@ -164,7 +164,7 @@ export const data: TalentData = {
           60,
           80,
           100,
-        ]}% and for your feral abilites by ${[
+        ]}% and for your feral abilities by ${[
           10,
           20,
           30,
