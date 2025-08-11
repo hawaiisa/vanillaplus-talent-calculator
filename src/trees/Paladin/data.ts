@@ -420,13 +420,13 @@ export const data: TalentData = {
         icon: icons["inv_jewelry_talisman_06"], 
         maxRank: 5, 
         reqPoints: 10, 
-        description: talentText`Gives you a ${[
+        description: talentText`Restores mana equal to ${[
+          4,
+          8,
+          12,
+          16,
           20,
-          40,
-          60,
-          80,
-          100,
-        ]}% chance to generate Mana equal to 10% of healing received.`, 
+        ]}% of healing received.`, 
       },
       "Guardian's Favor": {
         name: "Guardian's Favor", 
@@ -477,8 +477,8 @@ export const data: TalentData = {
         prereq: "Holy Shield", 
         arrows: [{ dir: "left", from: "e1", to: "e2" }],
         description: talentText`Allows your Holy Shield to block an additional ${[
-          2,
-          4,
+          3,
+          6,
         ]} attacks and increases its duration by ${[
           5,
           10,
@@ -492,7 +492,7 @@ export const data: TalentData = {
         reqPoints: 20, 
         prereq: "Blessing of Sanctuary", 
         arrows: [{ dir: "down", from: "c2", to: "e2"}], 
-        description: talentText`Increases chance to block by 30% for 10 seconds, and deals 45 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.`, 
+        description: talentText`Increases chance to block by 30% for 10 seconds, and deals 45 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes twice additional threat. Each block expends a charge. 4 charges.`, 
       },
       "Improved Righteous Fury": {
         name: "Improved Righteous Fury", 

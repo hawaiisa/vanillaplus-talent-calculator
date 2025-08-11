@@ -448,8 +448,8 @@ export const data: TalentData = {
         maxRank: 2, 
         reqPoints: 15, 
         description: talentText`Increases spell damage and healing by up to ${[
+          10,
           20,
-          40,
         ]}% of your total Spirit.`, 
       },
       "Improved Prayer of Healing": {
@@ -518,7 +518,7 @@ export const data: TalentData = {
         reqPoints: 30, 
         prereq: "Sacrifice", 
         arrows: [{ dir: "down", from: "e2", to: "g2"}], 
-        description: talentText`Upon death, the priest becomes the Spirit of Redemption for 15 seconds. The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects. While in this form the priest can cast any healing spell free of cost. When the effect ends, the priest dies.`, 
+        description: talentText`Upon death, the priest becomes the Spirit of Redemption for 15 seconds. The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects. While in this form the priest can cast any healing spell free of cost and with 50% bonus casting speed. When the effect ends, the priest dies.`, 
       },
     },
   },
