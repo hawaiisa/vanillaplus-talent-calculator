@@ -778,7 +778,7 @@ export const data: TalentData = {
         reqPoints: 20, 
         prereq: "Frost Shards", 
         arrows: [{ dir: "down", from: "d2", to: "e2"}], 
-        description: talentText`When activated, this spell finishes the cooldown on all your Frost spells.`, 
+        description: talentText`Launches four shards of ice at the enemy, each dealing Frost damage equal to your level and slowing movement speed by 20% for 2 sec.`, 
       },
       "Icing": {
         name: "Icing", 
