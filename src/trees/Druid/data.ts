@@ -52,17 +52,19 @@ export const data: TalentData = {
           100,
         ]}% chance to gain a 100% bonus to your Spirit after killing a target that yields experience or honor. This effect also allows 50% of your Mana Regeneration to continue while casting. Lasts 15 seconds.`,
       },
-      
-      "Mighty Roots": {
-        name: "Mighty Roots",
+
+      "Omnipresence": {
+        name: "Omnipresence",
         pos: "b1",
-        icon: icons["spell_nature_thorns"],
-        maxRank: 3,
+        icon: icons["spell_nature_naturetouchgrow"],
+        maxRank: 2,
         reqPoints: 5,
-        description: talentText`Improves the duration and damage of your Entangling roots and Thorns spells by ${[
-          40,
-          70,
-          100,
+        description: talentText`Increases the range of your offensive Balance spells by ${[
+          10,
+          20,
+        ]}% and reduces the chance enemies will resist them by ${[
+          2,
+          4,
         ]}%.`,
       },
       
@@ -97,17 +99,16 @@ export const data: TalentData = {
           15,
         ]}%.`,
       },
-      
-      "Improved Faerie Fire": {
-        name: "Improved Faerie Fire",
+
+      "Mighty Roots": {
+        name: "Mighty Roots",
         pos: "c1",
-        icon: icons["spell_nature_faeriefire"],
-        maxRank: 3,
+        icon: icons["spell_nature_thorns"],
+        maxRank: 2,
         reqPoints: 10,
-        description: talentText`Increases the range and armor reduction of your Faerie Fire and Faerie Fire (Feral) spells by ${[
-          10,
-          20,
-          30,
+        description: talentText`Improves the duration and damage of your Entangling roots and Thorns spells by ${[
+          50,
+          100,
         ]}%.`,
       },
       
@@ -134,19 +135,17 @@ export const data: TalentData = {
           40,
         ]} sec.`,
       },
-      
-      "Omnipresence": {
-        name: "Omnipresence",
+
+      "Improved Faerie Fire": {
+        name: "Improved Faerie Fire",
         pos: "d1",
-        icon: icons["spell_nature_naturetouchgrow"],
-        maxRank: 2,
+        icon: icons["spell_nature_faeriefire"],
+        maxRank: 3,
         reqPoints: 15,
-        description: talentText`Increases the range of your offensive Balance spells by ${[
+        description: talentText`Increases the range and armor reduction of your Faerie Fire and Faerie Fire (Feral) spells by ${[
           10,
           20,
-        ]}% and reduces the chance enemies will resist them by ${[
-          2,
-          4,
+          30,
         ]}%.`,
       },
       
@@ -216,7 +215,7 @@ export const data: TalentData = {
         icon: icons["spell_nature_naturesblessing"],
         maxRank: 1,
         reqPoints: 20,
-        description: talentText`All spell criticals grace you with a blessing of nature, reducing the casting time of your next spell by 0.5 sec.`,
+        description: talentText`All spell criticals grace you with a blessing of nature, reducing the casting time, mana cost and global cooldown of your next spell by 30%.`,
       },
       
       "Moonglow":{
@@ -256,17 +255,17 @@ export const data: TalentData = {
         prereq: "Nature's Grace",
         arrows: [{dir: "down", from: "e3", to: "f3"}],
         description: talentText`Your Wrath spell have a ${[
-          4,
-          8,
-          12,
-          16,
+          5,
+          10,
+          15,
           20,
+          25,
         ]}% chance to increase critical strike chance of your next Moonfire or Starfire by 50%, and your Moonfire or Starfire spells have a ${[
-          4,
-          8,
-          12,
-          16,
+          5,
+          10,
+          15,
           20,
+          25,
         ]}% chance to increase critical strike chance of your next Wrath by 50%.`
       },
       
@@ -445,10 +444,10 @@ export const data: TalentData = {
           10,
           15,
         ]}%, reduces the chance enemies have to detect you while Prowling and increases the duration of your Tiger's Fury, Grizzly's Fury and Challenging Roar abilities by ${[
-          3,
-          6,
-          9,
-        ]} sec.`,
+          20,
+          40,
+          60,
+        ]}%.`,
       },
       
       "Stalking": {
@@ -543,11 +542,11 @@ export const data: TalentData = {
           4,
           5,
         ]}%. In addition, your melee critical strikes will increase your attack speed by ${[
+          5,
           10,
           15,
           20,
           25,
-          30,
         ]}% for your next 3 attacks.`,
       },
       
@@ -715,17 +714,25 @@ export const data: TalentData = {
         description: talentText`Imbues the Druid with natural energy. Each of the Druid's melee attack has a chance to reduce the cost and cast time of your next damage or healing spell by 75%. Lasts 5 min.`,
       },
 
-      "Reflection": {
-        name: "Reflection",
+      "Custody of the Nature": {
+        name: "Custody of the Nature",
         pos: "c3",
-        icon: icons["spell_frost_windwalkon"],
+        icon: icons["custody_of_the_nature"],
         maxRank: 3,
         reqPoints: 10,
-        description: talentText`Allows ${[
-          7,
-          14,
+        description: talentText`After being struck by a critical hit, you become immune to critical strikes for the next ${[
+          1,
+          2,
+          3,
+        ]} attack(s) or ${[
+          3,
+          4,
+          5,
+        ]} sec. In addition, gives your spell effects additional ${[
+          10,
           20,
-        ]}% of your Mana regeneration to continue while casting.`,
+          30,
+        ]}% chance to resist dispel effects.`,
       },
 
       "Improved Mark of the Wild": {
@@ -779,25 +786,17 @@ export const data: TalentData = {
         ]}%.`,
       },
 
-      "Custody of the Nature": {
-        name: "Custody of the Nature",
+      "Reflection": {
+        name: "Reflection",
         pos: "d4",
-        icon: icons["custody_of_the_nature"],
+        icon: icons["spell_frost_windwalkon"],
         maxRank: 3,
         reqPoints: 15,
-        description: talentText`After being struck by a critical hit, you become immune to critical strikes for the next ${[
-          1,
-          2,
-          3,
-        ]} attack(s) or ${[
-          3,
-          4,
-          5,
-        ]} sec. In addition, gives your spell effects additional ${[
-          15,
+        description: talentText`Allows ${[
+          10,
           20,
-          25,
-        ]}% chance to resist dispel effects.`,
+          30,
+        ]}% of your Mana regeneration to continue while casting.`,
       },
 
       "Tranquil Spirit": {
@@ -841,9 +840,9 @@ export const data: TalentData = {
           30,
           45,
         ]}%.\nIn addition, your innervate casts grants you ${[
-          7,
-          14,
+          10,
           20,
+          30,
         ]} sec of Innervate effect.`,
       },
       
@@ -887,7 +886,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Swiftmend",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Reduces the global cooldown of your spells by 0.5 sec.`,
+        description: talentText`Reduces the global cooldown of your spells by 0.5 sec and increases your casting speed by 20%.`,
       },
     },
   },

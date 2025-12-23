@@ -459,12 +459,12 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 15, 
         description: talentText`Your Fire damage spell crits have a ${[
-          3,
-          6,
-          9,
-          12,
+          5,
+          10,
           15,
-        ]}% chance to make your next Scorch or Pyroblast spell cast instantly and cost no Mana.`, 
+          20,
+          25,
+        ]}% chance to make your next Scorch or Pyroblast spell cast instantly and cost no Mana. (Affects GCD?)`, 
       },
       "Chain Reaction": {
         name: "Chain Reaction", 
@@ -758,7 +758,7 @@ export const data: TalentData = {
         ]}%. In addition, your Blizzard spell chills targets, reducing their movement speed by ${[
           25,
           50,
-        ]}% for 2 sec.`, 
+        ]}% for 2 sec. In addition(2), reduces the cooldown of your Ice Shards by 50%.`, 
       },
       "Ice Mirror": {
         name: "Ice Mirror", 
@@ -787,11 +787,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 20, 
         description: talentText`Regenerates 1% of your health and mana every ${[
-          10,
-          8,
-          6,
+          5,
           4,
+          3,
           2,
+          1,
         ]} seconds if you've been standing still for ~10 sec.`, 
       },
       "Lord of the North Wind": {

@@ -31,11 +31,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 0, 
         description: talentText`Increases your Strength by ${[
-          2,
-          4,
+          3,
           6,
-          8,
-          10,
+          9,
+          12,
+          15,
         ]}%.`, 
       },
       "Divine Intellect": {
@@ -45,11 +45,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 0, 
         description: talentText`Increases your total Intellect by ${[
-          2,
-          4,
+          3,
           6,
-          8,
-          10,
+          9,
+          12,
+          15,
         ]}%.`, 
       },
       "Improved Lay on Hands": {
@@ -77,17 +77,17 @@ export const data: TalentData = {
           10,
         ]} yards.`, 
       },
-      "Divine Concentration": {
-        name: "Divine Concentration", 
+      "Spiritual Focus": {
+        name: "Spiritual Focus", 
         pos: "b2", 
-        icon: icons["spell_holy_fanaticism"], 
+        icon: icons["spell_arcane_blink"], 
         maxRank: 3, 
-        reqPoints: 5,  
-        description: talentText`Regenerates 1% of your total Mana every ${[
-          15,
-          10,
-          5,
-        ]} seconds.`, 
+        reqPoints: 5, 
+        description: talentText`Gives your spells a ${[
+          20,
+          40,
+          60,
+        ]}% chance to not lose casting time when you take damage.`, 
       },
       "Holy Power": {
         name: "Holy Power", 
@@ -115,25 +115,26 @@ export const data: TalentData = {
           15,
         ]}%.`, 
       },
-      "Spiritual Focus": {
-        name: "Spiritual Focus", 
+
+      "Divine Concentration": {
+        name: "Divine Concentration", 
         pos: "c1", 
-        icon: icons["spell_arcane_blink"], 
+        icon: icons["spell_holy_fanaticism"], 
         maxRank: 3, 
-        reqPoints: 10, 
-        description: talentText`Gives your spells a ${[
-          20,
-          40,
-          60,
-        ]}% chance to not lose casting time when you take damage.`, 
+        reqPoints: 10,  
+        description: talentText`Regenerates 1% of your total Mana every ${[
+          15,
+          10,
+          5,
+        ]} seconds.`, 
       },
-      "Consecration": {
-        name: "Consecration", 
+      "Inner Light": {
+        name: "Inner Light", 
         pos: "c2", 
-        icon: icons["spell_holy_innerfire"], 
+        icon: icons["spell_holy_surgeoflight"], 
         maxRank: 1, 
         reqPoints: 10, 
-        description: talentText`Consecrates the land beneath the Paladin, doing 8 Holy damage to enemies who enter the area.`, 
+        description: talentText`You emit a flash of blinding light and blind nearby enemies for 4 seconds. Targets must be facing you. Any damage caused will remove the effect.`, 
       },
       "Divine Grace": {
         name: "Divine Grace", 
@@ -149,23 +150,25 @@ export const data: TalentData = {
           100,
         ]}%.`, 
       },
-      "Improved Purifying": {
-        name: "Improved Purifying", 
+      "Holy Grasp": {
+        name: "Holy Grasp", 
         pos: "d2", 
-        icon: icons["spell_holy_purifyingpower"], 
+        icon: icons["spell_holy_healingaura"], 
         maxRank: 3, 
         reqPoints: 15, 
-        prereq: "Consecration", 
-        arrows: [{ dir: "down", from: "c2", to: "d2"}], 
-        description: talentText`Reduces the Mana cost of your Cleanse, Purify, Consecration, Exorcism, Holy Wrath and Hammer of Wrath spells by ${[
-          10,
-          20,
-          30
-         ]}% and increases the critical strike chance of your Exorcism, Holy Wrath and Hammer of Wrath spells by ${[
-          10,
-          20,
-          30
-         ]}%.`, 
+        description: talentText`Increases the range of your Judgements, Exorcism, and Hammer of Wrath spells by ${[
+          2,
+          4,
+          6,
+        ]} yards, increases the radius of your Holy Wrath by ${[
+          3,
+          6,
+          9,
+        ]} yards, and reduces the cast time of your Holy Wrath and Hammer of Wrath spells by ${[
+          0.5,
+          1,
+          1.5,
+        ]} sec.`, 
       },
       "Illumination": {
         name: "Illumination", 
@@ -199,12 +202,20 @@ export const data: TalentData = {
         name: "Light's Mercy", 
         pos: "e1", 
         icon: icons["spell_holy_holybolt"], 
-        maxRank: 3, 
+        maxRank: 5, 
         reqPoints: 20, 
-        description: talentText`Reduces the cost of your Holy Light, Flash of Light, and Holy Shock spells by ${[
-          5,
-          10,
-          15,
+        description: talentText`Gives your Flash of Light spells a ${[
+          20,
+          40,
+          60,
+          80,
+          100
+        ]}% chance to apply the Spark of Light effect. Spark of light reduces the cast time of your next Holy Light by 10% and increases its range by 2 yards, the effect stacks up to 10 times.\nAlso increases the critical effect chance of your Flash of Light by ${[
+          2,
+          4,
+          6,
+          8,
+          10
         ]}%.`, 
       },
       "Holy Shock": {
@@ -215,25 +226,21 @@ export const data: TalentData = {
         reqPoints: 20, 
         description: talentText`Blasts the target with Holy energy, causing 134 Holy damage to an enemy, or 134 healing to an ally. Heals twice the amount on targets that have 20% or less health.`, 
       },
-      "Long Arm of Justice": {
-        name: "Long Arm of Justice", 
+      "Improved Purifying": {
+        name: "Improved Purifying", 
         pos: "e3", 
-        icon: icons["spell_holy_healingaura"], 
+        icon: icons["spell_holy_purifyingpower"], 
         maxRank: 3, 
-        reqPoints: 20, 
-        description: talentText`Increases the range of your Judgements, Exorcism, and Hammer of Wrath spells by ${[
-          2,
-          4,
-          6,
-        ]} yards, increases the radius of your Holy Wrath by ${[
-          3,
-          6,
-          9,
-        ]} yards, and reduces the cast time of your Holy Wrath and Hammer of Wrath spells by ${[
-          0.5,
-          1,
-          1.5,
-        ]} sec.`, 
+        reqPoints: 15, 
+        description: talentText`Reduces the Mana cost of your Cleanse, Purify, Consecration, Exorcism, Holy Wrath and Hammer of Wrath spells by ${[
+          15,
+          30,
+          45
+         ]}% and increases the critical strike chance of your Exorcism, Holy Wrath and Hammer of Wrath spells by ${[
+          15,
+          30,
+          45
+         ]}%.`, 
       },
       "Healing Light": {
         name: "Healing Light", 
@@ -241,18 +248,18 @@ export const data: TalentData = {
         icon: icons["spell_holy_proclaimchampion"], 
         maxRank: 5, 
         reqPoints: 25, 
-        description: talentText`Gives your Flash of Light spells a ${[
-          20,
-          40,
-          60,
-          80,
-          100
-        ]}% chance to apply the Spark of Light effect. Spark of light reduces the cast time of your next Holy Light by 0.25 sec and increases its range by 2 yards, the effect stacks up to 10 times.\nAlso increases the critical effect chance of your Flash of Light by ${[
-          2,
+        description: talentText`Increases the amount healed by your healing spells by ${[
           4,
-          6,
           8,
-          10
+          12,
+          16,
+          20
+        ]}% and reduces your Holy damage by ${[
+          4,
+          8,
+          12,
+          16,
+          20
         ]}%.`, 
       },
       "Searing Light": {
@@ -262,22 +269,28 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 25, 
         description: talentText`Increases you Holy damage by ${[
-          3,
-          6,
-          9,
+          4,
+          8,
           12,
-          15,
-        ]}%.`, 
+          16,
+          20,
+        ]}% and decreases healing done by ${[
+          4,
+          8,
+          12,
+          16,
+          20,
+        ]}%.`,
       },
-      "Inner Light": {
-        name: "Inner Light", 
+      "Holy Purge": {
+        name: "Holy Purge", 
         pos: "g2", 
-        icon: icons["spell_holy_surgeoflight"], 
+        icon: icons["placeholder_icon"], 
         maxRank: 1, 
         reqPoints: 30, 
         prereq: "Holy Shock", 
         arrows: [{ dir: "down", from: "e2", to: "g2" }], 
-        description: talentText`You emit a flash of blinding light, removing the mana cost of all your spells and blinding nearby enemies for 6 seconds. Targets must be facing you. Any damage caused will remove the effect.`, 
+        description: talentText`10% chance on dealing Holy damage to dispel the enemy. In addition, deal/heal for 5% of your current mana for each dispelled effect on the enemy/ally.`, 
       },
     },
   },
@@ -354,17 +367,15 @@ export const data: TalentData = {
         name: "Redoubt", 
         pos: "b3", 
         icon: icons["ability_defend"], 
-        maxRank: 5, 
+        maxRank: 3, 
         reqPoints: 5, 
         prereq: "Shield Specialization", 
         arrows: [{ dir: "down", from: "a3", to: "b3"}], 
-        description: talentText`Gives you a ${[
-          4,
-          8,
-          12,
-          16,
+        description: talentText`Gives you a 20% chance when hit to gain a ${[
+          10,
           20,
-        ]}% chance when hit to gain a 30% chance to block attacks for 15 seconds of 5 blocks. Critical hits grants this effect five times more often.`, 
+          30,
+        ]}% chance to block attacks for 15 seconds of 5 blocks. Critical hits grants this effect five times more often.`, 
       },
       "Precision": {
         name: "Precision", 
@@ -390,17 +401,18 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "b1", to: "c1" }], 
         description: talentText`Degenerates the movement and attack capabilities of nearby opponents by 15%.`, 
       },
-      "Blessing of Sanctuary": {
-        name: "Blessing of Sanctuary", 
-        pos: "c2", 
-        icon: icons["spell_nature_lightningshield"], 
+      "Seal of Fury": {
+        name: "Seal of Fury", 
+        pos: "c3", 
+        icon: icons["spell_holy_crusader"], 
         maxRank: 1, 
         reqPoints: 10, 
-        description: talentText`Places a Blessing on the friendly target, reducing the damage dealt from all sources by up to 10 for 300 seconds. In addition, when the target blocks a melee attack, the attacker will take 10 holy damage. Players may only have one Blessing on them per Paladin at any one time.`, 
+        arrows: [{ dir: "down", from: "c3", to: "e2"}], 
+        description: talentText`Fills the Paladin with divine fury for 30 seconds, causing melee attacks to deal additional physical damage equal to 30% of normal weapon damage to 3 targets in front of the Paladin. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 3 seconds, forcing the target to attack you. Has no effect if the target is already attacking you.`, 
       },
       "Improved Concentration Aura": {
         name: "Improved Concentration Aura", 
-        pos: "c3", 
+        pos: "c2", 
         icon: icons["spell_holy_mindsooth"], 
         maxRank: 3, 
         reqPoints: 10, 
@@ -430,7 +442,7 @@ export const data: TalentData = {
       },
       "Guardian's Favor": {
         name: "Guardian's Favor", 
-        pos: "d1", 
+        pos: "d2", 
         icon: icons["spell_holy_sealofprotection"], 
         maxRank: 2, 
         reqPoints: 15, 
@@ -444,7 +456,7 @@ export const data: TalentData = {
       },
       "One-Handed Weapon Specialization": {
         name: "One-Handed Weapon Specialization", 
-        pos: "d3", 
+        pos: "d1", 
         icon: icons["inv_sword_20"], 
         maxRank: 5, 
         reqPoints: 15, 
@@ -490,8 +502,8 @@ export const data: TalentData = {
         icon: icons["spell_holy_blessingofprotection"], 
         maxRank: 1, 
         reqPoints: 20, 
-        prereq: "Blessing of Sanctuary", 
-        arrows: [{ dir: "down", from: "c2", to: "e2"}], 
+        prereq: "Seal of Fury", 
+        arrows: [{ dir: "left", from: "e2", to: "e3" }], 
         description: talentText`Increases chance to block by 30% for 10 seconds, and deals 45 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes twice additional threat. Each block expends a charge. 4 charges.`, 
       },
       "Improved Righteous Fury": {
@@ -500,7 +512,13 @@ export const data: TalentData = {
         icon: icons["spell_holy_sealoffury"], 
         maxRank: 3, 
         reqPoints: 20, 
+        prereq: "Seal of Fury", 
+        arrows: [{ dir: "right", from: "e3", to: "e4"}], 
         description: talentText`Increase the amount of threat generated while under the effect of Righteous Fury by ${[
+          10,
+          20,
+          30,
+        ]}% and increases your attack speed by ${[
           10,
           20,
           30,
@@ -508,7 +526,7 @@ export const data: TalentData = {
       },
       "Morale": {
         name: "Morale", 
-        pos: "f1", 
+        pos: "f2", 
         icon: icons["spell_holy_heroism"], 
         maxRank: 5, 
         reqPoints: 25, 
@@ -528,12 +546,12 @@ export const data: TalentData = {
       },
       "Reckoning": {
         name: "Reckoning", 
-        pos: "f3", 
+        pos: "f1", 
         icon: icons["spell_holy_blessingofstrength"], 
         maxRank: 5, 
         reqPoints: 25,
         prereq: "One-Handed Weapon Specialization", 
-        arrows: [{ dir: "down", from: "d3", to: "f3" }], 
+        arrows: [{ dir: "down", from: "d1", to: "f1" }], 
         description: talentText`Gives you a ${[
           4,
           8,
@@ -542,13 +560,13 @@ export const data: TalentData = {
           20,
         ]}% chance to gain an extra attack after being hit by attacks or spells. The critical attacks have 5 times higher chance to grant an extra attack.`, 
       },
-      "Seal of Fury": {
-        name: "Seal of Fury", 
+      "Stoicism": {
+        name: "Stoicism", 
         pos: "g2", 
-        icon: icons["spell_holy_crusader"], 
+        icon: icons["placeholder_icon"], 
         maxRank: 1, 
-        reqPoints: 30, 
-        description: talentText`Fills the Paladin with divine fury for 30 seconds, causing melee attacks to deal additional physical damage equal to 30% of normal weapon damage to all targets in front of the Paladin. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 4 seconds, forcing the target to attack you. Has no effect if the target is already attacking you.`, 
+        reqPoints: 30,
+        description: talentText`Delays your death by deferring all damage and healing for 2 seconds after a killing blow.`,
       },
     },
   },
@@ -606,16 +624,16 @@ export const data: TalentData = {
           6,
         ]}%.`, 
       },
-      "Improved Retribution Aura": {
-        name: "Improved Retribution Aura", 
+      "Pursuit of Justice": {
+        name: "Pursuit of Justice", 
         pos: "b3", 
-        icon: icons["spell_holy_auraoflight"], 
+        icon: icons["spell_holy_persuitofjustice"], 
         maxRank: 2, 
-        reqPoints: 5, 
-        description: talentText`Increases the damage done by your Retribution Aura by ${[
-          50,
-          100,
-        ]}%.`, 
+        reqPoints: 10, 
+        description: talentText`Increases the movement speed and mounted movement speed by ${[
+          5,
+          10,
+        ]}%. This does not stack with other movement speed increasing effects.`, 
       },
       "The Revenant": {
         name: "The Revenant", 
@@ -655,16 +673,19 @@ export const data: TalentData = {
         reqPoints: 10, 
         description: talentText`Gives the Paladin a chance to deal additional Holy damage equal to 50% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 seconds. Unleashing this Seal's energy will judge an enemy, instantly causing 0 Holy damage, 143 if the target is stunned, incapacitated or disoriented.`, 
       },
-      "Pursuit of Justice": {
-        name: "Pursuit of Justice", 
+      "Improved Retribution Aura": {
+        name: "Improved Retribution Aura", 
         pos: "c4", 
-        icon: icons["spell_holy_persuitofjustice"], 
+        icon: icons["spell_holy_auraoflight"], 
         maxRank: 2, 
-        reqPoints: 10, 
-        description: talentText`Increases the movement speed and mounted movement speed by ${[
+        reqPoints: 5, 
+        description: talentText`Increases the damage done by your Retribution Aura by ${[
+          50,
+          100,
+        ]}% and deals an additional ${[
           5,
           10,
-        ]}%. This does not stack with other movement speed increasing effects.`, 
+        ]}% of damage taken.`, 
       },
       "Eye for an Eye": {
         name: "Eye for an Eye", 
@@ -800,11 +821,11 @@ export const data: TalentData = {
           40,
           50,
         ]}%, but increases its casting time by ${[
-          0.5,
-          1,
+          0.3,
+          0.6,
+          0.9,
+          1.2,
           1.5,
-          2,
-          2.5,
         ]} sec.`, 
       },
       "Inevitable Justice": {

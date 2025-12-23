@@ -105,39 +105,19 @@ export const data: TalentData = {
           30,
         ]}%.`, 
       },
-      "Improved Poisons": {
-        name: "Improved Poisons", 
-        pos: "c4", 
-        icon: icons["ability_poisons"], 
-        maxRank: 5, 
-        reqPoints: 10, 
-        description: talentText`Increases the chance to apply poisons to your target by ${[
-          2,
-          4,
-          6,
-          8,
-          10,
-        ]}%.`, 
-      },
-      "Vile Poisons": {
-        name: "Vile Poisons", 
-        pos: "d1", 
-        icon: icons["ability_rogue_feigndeath"], 
-        maxRank: 5, 
-        reqPoints: 15, 
-        description: talentText`Increases the effectiveness of your poisons by ${[
+      "Coup De Grace": {
+        name: "Coup De Grace",
+        pos: "c4",
+        icon: icons["placeholder_icon"],
+        maxRank: 5,
+        reqPoints: 10,
+        description: talentText`Increases all damage by ${[
           5,
           10,
           15,
           20,
           25,
-        ]}% and gives your poisons an additional ${[
-          10,
-          20,
-          30,
-          40,
-          50,
-        ]}% dispel effect.`, 
+        ]}% versus targets with less than 20% HP.`,
       },
       "Death Mark": {
         name: "Death Mark", 
@@ -148,8 +128,8 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "b2", to: "d2" }], 
         description: talentText`Your Ambush, Garrote, and Cheap Shot marks the target. Marked can always be seen by the rogue whether it stealths or turns invisible. The target also appears on the minimap and cannot flee or move faster than their normal movement speed. This effect lasts ${[
           10,
-          20,
-        ]} seconds and can only occur once every 60 sec.`, 
+          25,
+        ]} seconds, increases your critical strike chance against the marked target by 10%. This effect can only occur once every 60 sec.`, 
       },
       "Bloodthirsty": {
         name: "Bloodthirsty", 
@@ -161,7 +141,11 @@ export const data: TalentData = {
           10,
           20,
           30,
-        ]}%.`, 
+        ]}% and shortens the tick interval and duration of Garrote and Rupture by ${[
+          10,
+          20,
+          30,
+        ]}%.`,
       },
       "Vitality": {
         name: "Vitality", 
@@ -170,8 +154,8 @@ export const data: TalentData = {
         maxRank: 2, 
         reqPoints: 15, 
         description: talentText`Allows ${[
-          5,
           10,
+          20,
         ]}% of your Health regeneration to work while in combat. In addition, healing taken increased by ${[
           15,
           30,
@@ -216,10 +200,10 @@ export const data: TalentData = {
       },
       "Seal Fate": {
         name: "Seal Fate", 
-        pos: "f1", 
+        pos: "d1", 
         icon: icons["spell_shadow_chilltouch"], 
         maxRank: 5, 
-        reqPoints: 25, 
+        reqPoints: 15, 
         description: talentText`Your critical strikes from abilities that add combo points have a ${[
           20,
           40,
@@ -254,6 +238,26 @@ export const data: TalentData = {
           80,
           100,
         ]}% chance to reduce the target's stats by 1% and increase your Agility by 1%. Lasts 15 seconds, stacks up to 20 times.`, 
+      },
+      "Improved Poisons": {
+        name: "Improved Poisons", 
+        pos: "f4", 
+        icon: icons["placeholder_icon"], 
+        maxRank: 5, 
+        reqPoints: 25, 
+        description: talentText`Increases the damage dealt by your poisons by ${[
+          5,
+          10,
+          15,
+          20,
+          25,
+        ]}% and increases your chance to apply poisons to your target by ${[
+          6,
+          12,
+          18,
+          24,
+          30,
+        ]}%.`, 
       },
       "Vigor": {
         name: "Vigor", 
@@ -306,12 +310,12 @@ export const data: TalentData = {
           4,
           5,
         ]} and all resistances by ${[
-          8,
-          16,
-          24,
-          32,
-          40,
-        ]}`, 
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0,
+        ]} per level.`, 
       },
       "Improved Backstab": {
         name: "Improved Backstab", 
@@ -329,12 +333,11 @@ export const data: TalentData = {
         name: "Deflection", 
         pos: "b2", 
         icon: icons["ability_parry"], 
-        maxRank: 3, 
+        maxRank: 2, 
         reqPoints: 5, 
         description: talentText`Increases your Parry chance by ${[
-          2,
-          4,
-          6
+          3,
+          5,
         ]}%.`, 
       },
       "Precision": {
@@ -418,18 +421,38 @@ export const data: TalentData = {
           5,
         ]}%.`, 
       },
+      "Dazing Bolts": {
+        name: "Dazing Bolts",
+        pos: "g4",
+        icon: icons["placeholder_icon"],
+        maxRank: 2,
+        reqPoints: 10,
+        description: talentText`Gives a ${[
+          50,
+          100,
+        ]}% chance on ranged attack to slow the target for 4 seconds. In addition increase the range of thrown weapons by ${[
+          3,
+          6,
+         ]} yards.`,
+      },
       "Steadfast Determination": {
         name: "Steadfast Determination", 
         pos: "d1", 
         icon: icons["spell_nature_focusedmind"], 
         maxRank: 5, 
         reqPoints: 15, 
-        description: talentText`Increases your chance to resist Stun, Fear and Charm effects by an additional ${[
-          7,
-          14,
-          21,
-          28,
-          35,
+        description: talentText`Increases your chance to resist Stun and Fear effects by an additional ${[
+          5,
+          10,
+          15,
+          20,
+          25,
+        ]}% and increases your stamina by ${[
+          5,
+          10,
+          15,
+          20,
+          25,
         ]}%.`, 
       },
       "Mace Specialization": {
@@ -460,6 +483,19 @@ export const data: TalentData = {
           5,
         ]}% chance to get an extra attack on the same target after dealing damage with your Sword.`, 
       },
+      "Survivor": {
+        name: "Survivor", 
+        pos: "e1", 
+        icon: icons["placeholder_icon"], 
+        maxRank: 2, 
+        reqPoints: 20, 
+        prereq: "Steadfast Determination", 
+        arrows: [{ dir: "down", from: "d1", to: "e1" }], 
+        description: talentText`Reduces your damage taken by ${[
+          40,
+          80,
+        ]}% of your missing health percentage.`, 
+      },
       "Blade Flurry": {
         name: "Blade Flurry", 
         pos: "e2", 
@@ -478,15 +514,12 @@ export const data: TalentData = {
           1,
           2,
         ]} minute${["","s"]} and increases your strength by ${[
-          25,
           50,
-        ]}% and Stamina by ${[
-          5,
-          10,
-        ]}%.`, 
+          100,
+        ]}%`, 
       },
-      "Battle Rush": {
-        name: "Battle Rush", 
+      "Combat Rush": {
+        name: "Combat Rush", 
         pos: "f1", 
         icon: icons["ability_warrior_rampage"], 
         maxRank: 5, 
@@ -497,10 +530,10 @@ export const data: TalentData = {
           12,
           16,
           20,
-        ]}% chance to regain 10 energy.`, 
+        ]}% chance to regain 20 energy.`, 
       },
-      "Weapon Expertise": {
-        name: "Weapon Expertise", 
+      "Combat Expertise": {
+        name: "Combat Expertise", 
         pos: "f2", 
         icon: icons["spell_holy_blessingofstrength"], 
         maxRank: 2, 
@@ -519,11 +552,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 25, 
         description: talentText`Increases the damage of your Sinister Strike, Hemorrhage, and Eviscerate abilities by ${[
-          3,
-          6,
-          9,
-          12,
+          5,
+          10,
           15,
+          20,
+          25,
         ]}%.`, 
       },
       "Adrenaline Rush": {
@@ -547,15 +580,11 @@ export const data: TalentData = {
         icon: icons["ability_sap"], 
         maxRank: 3, 
         reqPoints: 0, 
-        description: talentText`Gives you a ${[
-          30,
-          60,
-          90,
-        ]}% chance to return to stealth mode after using your Sap ability. In addition, reduces the Energy cost of your Sap ability by ${[
+        description: talentText`Sap now applies a debuff that reduces the target's HP by 10% and mana by 20% for it's duration and an additional${[
           10,
           20,
           30,
-        ]}.`, 
+        ]}seconds afterwards.`, 
       },
       "Master of Deception": {
         name: "Master of Deception", 
@@ -704,21 +733,17 @@ export const data: TalentData = {
           5
         ]}%.`, 
       },
-      "Serrated Blades": {
-        name: "Serrated Blades", 
+      "Shadow Cut": {
+        name: "Shadow Cut", 
         pos: "d3", 
-        icon: icons["inv_sword_17"], 
+        icon: icons["placeholder_icon"], 
         maxRank: 3, 
         reqPoints: 15, 
-        description: talentText`Causes your attacks to ignore up to ${[
-          100,
-          200,
-          300,
-        ]} of your target's Armor and increases the damage of your Garrote and Rupture abilities by ${[
+        description: talentText`Steal up to ${[
           10,
           20,
           30,
-        ]}%. The amount of Armor reduced increases with your level.`, 
+        ]}% of the healing received by their target.`, 
       },
       "Cloak of Shadows": {
         name: "Cloak of Shadows", 
@@ -748,7 +773,7 @@ export const data: TalentData = {
         name: "Hemorrhage", 
         pos: "e4", 
         icon: icons["spell_shadow_lifedrain"], maxRank: 1, reqPoints: 20, 
-        prereq: "Serrated Blades", 
+        prereq: "Shadow Cut", 
         arrows: [
           { dir: "right-down", from: "d3", to: "d4" }, 
           { dir: "right-down-down", from: "d4", to: "e4" },
@@ -776,11 +801,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 25, 
         description: talentText`Increases your Attack Power by ${[
-          3,
-          6,
-          9,
+          4,
+          8,
           12,
-          15,
+          16,
+          20,
         ]}%.`, 
       },
       "Enveloping Shadows": {
@@ -795,7 +820,15 @@ export const data: TalentData = {
           15,
           30,
           45,
-        ]}%. While stealthed the effect is doubled.`, 
+        ]}%. While stealthed the effect is doubled and provides a ${[
+          0.5,
+          1,
+          1.5,
+        ]} Health regeneration per second and ${[
+          5,
+          10,
+          15,
+        ]} Energy regeneration per tick.`, 
       },
       "Preparation": {
         name: "Preparation", 

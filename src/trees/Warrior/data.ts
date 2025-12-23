@@ -45,8 +45,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 0,
         description: talentText`Increases your Parry chance by ${[
-          2,
-          4,
+          3,
+          5,
         ]}%.`,
       },
       "Improved Charge": {
@@ -109,11 +109,22 @@ export const data: TalentData = {
         reqPoints: 10,
         prereq: "Tactical Mastery",
         arrows: [{ dir: "down", from: "a2", to: "c2" }],
-        description: talentText`Increases the time required for your rage to decay while out of combat by 30%.`,
+        description: talentText`The warrior generates 1 rage every second while in combat and increases the time required for your rage to decay while out of combat by 33%.`,
+      },
+      "Improved Rend": {
+        name: "Improved Rend",
+        pos: "c3",
+        icon: icons["placeholder_icon"],
+        maxRank: 2,
+        reqPoints: 10,
+        description: talentText`Now allows rend to stack up to ${[
+          2,
+          3,
+        ]} times.`,
       },
       "Impale": {
         name: "Impale",
-        pos: "c3",
+        pos: "c4",
         icon: icons["ability_searingarrow"],
         maxRank: 2,
         reqPoints: 10,
@@ -122,24 +133,21 @@ export const data: TalentData = {
           20,
         ]}%.`,
       },
-      "Deep Wounds": {
-        name: "Deep Wounds",
-        pos: "c4",
-        icon: icons["ability_backstab"],
-        maxRank: 3,
-        reqPoints: 10,
-        prereq: "Impale",
-        arrows: [{ dir: "right", from: "c3", to: "c4"}],
-        description: talentText`Your critical strikes cause the opponent to bleed, dealing ${[
-          10,
-          20,
-          30,
-        ]}% of your melee weapon's average damage over 12 sec. Stacks up to 5 times.`,
-      },
-      "Poleaxe Specialization": {
-        name: "Poleaxe Specialization",
+      "Improved Battle Stance": {
+        name: "Improved Battle Stance",
         pos: "d1",
-        icon: icons["inv_weapon_halbard_01"],
+        icon: icons["placeholder_icon"],
+        maxRank: 2,
+        reqPoints: 15,
+        description: talentText`Increases your Attack Power by${[
+          5,
+          10,
+        ]}% while in Battle Stance.`,
+      },
+      "Weapon Expertise ": {
+        name: "Weapon Expertise",
+        pos: "d2",
+        icon: icons["placeholder_icon"],
         maxRank: 5,
         reqPoints: 15,
         description: talentText`Increases your chance to get a critical strike with Axes and Polearms by ${[
@@ -148,35 +156,33 @@ export const data: TalentData = {
           3,
           4,
           5,
-        ]}%.`,
-      },
-      "Mace Specialization": {
-        name: "Mace Specialization",
-        pos: "d2",
-        icon: icons["inv_mace_01"],
-        maxRank: 5,
-        reqPoints: 15,
-        description: talentText`Causes your attacks with maces to ignore up to ${[
+        ]}%. Causes your attacks with maces to ignore up to ${[
           120,
           240,
           360,
           480,
           600,
-        ]} of your target's armor (Scales with your level).`,
-      },
-      "Sword Specialization": {
-        name: "Sword Specialization",
-        pos: "d3",
-        icon: icons["inv_sword_27"],
-        maxRank: 5,
-        reqPoints: 15,
-        description: talentText`Gives you a ${[
+        ]} of your target's armor (Scales with your level). Gives you a ${[
           1,
           2,
           3,
           4,
           5,
-        ]}% chance yo get an extra attack on the same target after dealing damage with your Sword.`,
+        ]}% chance you get an extra attack on the same target after dealing damage with your Sword.`,
+      },
+     "Deep Wounds": {
+        name: "Deep Wounds",
+        pos: "d4",
+        icon: icons["ability_backstab"],
+        maxRank: 3,
+        reqPoints: 10,
+        prereq: "Impale",
+        arrows: [{ dir: "down", from: "c4", to: "d4"}],
+        description: talentText`Your critical strikes cause the opponent to bleed, dealing ${[
+          10,
+          20,
+          30,
+        ]}% of your melee weapon's average damage over 12 sec. Stacks up to 5 times.`,
       },
       "Sweeping Strikes": {
         name: "Sweeping Strikes",
@@ -207,8 +213,8 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 20,
         prereq: "Deep Wounds",
-        arrows: [{ dir: "down", from: "c4", to: "e4" }],
-        description: talentText`Your auto attacks have a 10% chance to injure the target, increasing physical damage taken by 5% for ${[
+        arrows: [{ dir: "down", from: "d4", to: "e4" }],
+        description: talentText`Your auto attacks have a 10% chance to injure the target, increasing damage taken by 5% for ${[
           10,
           20,
           30,
@@ -263,7 +269,10 @@ export const data: TalentData = {
         description: talentText`Reduces the cooldown of your Mortal Strike ability by ${[
           0.5,
           1,
-        ]} sec.`,
+        ]} sec. In addition increases the damage of Mortal Strike by ${[
+          3,
+          5,
+        ]}%.`,
       },
     },
   },
@@ -279,9 +288,9 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 0,
         description: talentText`Allows ${[
-          5,
           10,
-          15,
+          20,
+          30,
         ]}% of your Health regeneration to continue while in combat.`
       },
       "Booming Voice": {
@@ -295,7 +304,7 @@ export const data: TalentData = {
           50,
         ]}%.`,
       },
-      Cruelty: {
+      "Cruelty": {
         name: "Cruelty",
         pos: "a3",
         icon: icons["ability_rogue_eviscerate"],
@@ -309,8 +318,8 @@ export const data: TalentData = {
           5,
         ]}%.`,
       },
-      "Improved Demoralizing Shout": {
-        name: "Improved Demoralizing Shout",
+      "Improved Combat Shouts": {
+        name: "Improved Combat Shouts",
         pos: "b1",
         icon: icons["ability_warrior_warcry"],
         maxRank: 5,
@@ -321,6 +330,12 @@ export const data: TalentData = {
           30,
           40,
           50,
+        ]}%. Also increases Battle Shout's melee attack power bonus by ${[
+          5,
+          10,
+          15,
+          20,
+          25,
         ]}%.`,
       },
       "Unbridled Wrath": {
@@ -336,17 +351,6 @@ export const data: TalentData = {
           20,
           25,
         ]}% chance to generate an 5 Rage points when you deal melee damage with a weapon.`,
-      },
-      "Improved Cleave": {
-        name: "Improved Cleave",
-        pos: "c1",
-        icon: icons["ability_warrior_cleave"],
-        maxRank: 2,
-        reqPoints: 10,
-        description: talentText`Increases the number of targets your Cleave hit by ${[
-          1,
-          2,
-        ]}.`,
       },
       "Piercing Howl": {
         name: "Piercing Howl",
@@ -365,34 +369,37 @@ export const data: TalentData = {
         maxRank: 3,
         reqPoints: 10,
         description: talentText`Regenerates ${[
-          3,
-          6,
-          9,
-        ]}% of your total Health over 15 sec after being the victim of a critical strike.`,
-      },
-      "Improved Battle Shout": {
-        name: "Improved Battle Shout",
-        pos: "c4",
-        icon: icons["ability_warrior_battleshout"],
-        maxRank: 2,
-        reqPoints: 10,
-        description: talentText`Increases the melee attack power bonus of your Battle Shout by ${[
+          5,
           10,
-          20,
-        ]}%.`,
+          15,
+        ]}% of your total Health over 30 sec after being the victim of a critical strike.`,
       },
       "Precision": {
         name: "Precision",
-        pos: "d1",
+        pos: "c4",
         icon: icons["ability_marksmanship"],
         maxRank: 5,
-        reqPoints: 15,
+        reqPoints: 10,
         description: talentText`Increases your chance to hit with melee weapons by ${[
           1,
           2,
           3,
           4,
           5,
+        ]}%.`,
+      },
+      "Cleaving": {
+        name: "Cleaving",
+        pos: "d1",
+        icon: icons["ability_warrior_cleave"],
+        maxRank: 2,
+        reqPoints: 10,
+        description: talentText`Increases the number of targets your Cleave hit by ${[
+          1,
+          2,
+        ]}. In addition increases the damage of Thunder Clap and Whirlwind by ${[
+          25,
+          50,
         ]}%.`,
       },
       "Improved Execute": {
@@ -420,8 +427,8 @@ export const data: TalentData = {
           5,
         ]}% melee damage bonus for 15 sec after being the victim of a critical strike. Stacks up to 10 times.`,
       },
-      "Improved Slam": {
-        name: "Improved Slam",
+      "Slamcraft": {
+        name: "Slamcraft",
         pos: "d4",
         icon: icons["ability_warrior_decisivestrike"],
         maxRank: 3,
@@ -430,10 +437,14 @@ export const data: TalentData = {
           0.5,
           1,
           1.5,
-        ]} sec${[
+        ]} sec and increases the critical strike chance of Shield Slam by ${[
+          10,
+          20,
+          30,
+        ]}%${[
           ".",
           ".",
-          ", increases Rage cost by 5 Rage points and adds 6 sec shared cooldown.",
+          " and increases Rage cost by 5 Rage points and adds 6 sec shared cooldown.",
         ]}`,
       },
       "Inner Rage": {
@@ -476,11 +487,11 @@ export const data: TalentData = {
         maxRank: 5,
         reqPoints: 25,
         description: talentText`Increases your attack speed by ${[
+          5,
           10,
           15,
           20,
           25,
-          30,
         ]}% for your next 2 swings after dealing a melee critical strike.`,
       },
       "Berserker's Blood": {
@@ -497,6 +508,20 @@ export const data: TalentData = {
           20,
           30,
           40,
+        ]}%.`,
+      },
+      "Improved Berserker Stance": {
+        name: "Improved Berserker Stance",
+        pos: "f4",
+        icon: icons["placeholder_icon"],
+        maxRank: 2,
+        reqPoints: 25,
+        description: talentText`While in Berserker Stance, increases your attack speed by ${[
+          3,
+          5,
+        ]}% and reduces your global cooldown by ${[
+          0.25,
+          0.5,
         ]}%.`,
       },
       "Bloodthirst": {
@@ -520,7 +545,10 @@ export const data: TalentData = {
         description: talentText`Reduces the cost of your Bloodthirst ability by ${[
           5,
           10,
-        ]} Rage.`,
+        ]} Rage. In addition increases the damage done by Bloodthirst by ${[
+          3,
+          5,
+        ]}%.`,
       },
     },
   },
@@ -536,14 +564,8 @@ export const data: TalentData = {
         maxRank: 2,
         reqPoints: 0,
         description: talentText`Increases the instant Rage generated by your Bloodrage by ${[
-          10,
-          20,
-        ]}, reduces cooldown by ${[
-          10,
-          20,
-        ]} and reduces its cost by ${[
-          25,
-          50,
+          15,
+          30,
         ]}%.`,
       },
       "Toughness": {
@@ -572,6 +594,20 @@ export const data: TalentData = {
           3,
         ]}%.`,
       },
+      "Mocker": {
+        name: "Mocker",
+        pos: "b1",
+        icon: icons["spell_nature_reincarnation"],
+        maxRank: 2,
+        reqPoints: 5,
+        description: talentText`Improves your chance to hit with Taunt, Challenging Shout and Mocking Blow abilities by ${[
+          3,
+          6,
+        ]}%. In addition, increases the duration of Taunt, Challenging Shout and Mocking Blow by ${[
+          1,
+          2,
+        ]} sec.`,
+      },
       "Shield Specialization": {
         name: "Shield Specialization",
         pos: "b2",
@@ -592,31 +628,16 @@ export const data: TalentData = {
           100,
         ]}% chance to restore 1% of your health when a block occurs.`,
       },
-      "Improved Shield Bash": {
-        name: "Improved Shield Bash",
-        pos: "b3",
-        icon: icons["ability_warrior_shieldbash"],
+      "Improved Defensive Stance": {
+        name: "Improved Defensive Stance",
+        pos: "b4",
+        icon: icons["placeholder_icon"],
         maxRank: 2,
         reqPoints: 5,
-        description: talentText`Reduces the cost of your Shield Bash by ${[
+        description: talentText`When you enter defensive stance, Rage lost from stance switching is converted into a shield that absorbs 1% of your health per rage point lost. Lasts ${[
+          3,
           5,
-          10,
-        ]} rage points and gives it a ${[
-          50,
-          100,
-        ]}% chance to silence the target for 4 sec.`,
-      },
-      "Improved Revenge": {
-        name: "Improved Revenge",
-        pos: "b4",
-        icon: icons["ability_warrior_revenge"],
-        maxRank: 3,
-        reqPoints: 5,
-        description: talentText`Gives your Revenge ability a ${[
-          15,
-          30,
-          45,
-        ]}% chance to stun the target for 3 sec.`,
+        ]} seconds.`
       },
       "Last Stand": {
         name: "Last Stand",
@@ -630,27 +651,34 @@ export const data: TalentData = {
         name: "Shield Mastery",
         pos: "c2",
         icon: icons["ability_defend"],
-        maxRank: 3,
+        maxRank: 2,
         reqPoints: 10,
         prereq: "Shield Specialization",
         arrows: [{ dir: "down", from: "b2", to: "c2"}],
-        description: talentText`Allows your Shield Block and Shield Reflection abilities to block/reflect and additional attack/spell and reduces their cooldowns by ${[
-          15,
-          30,
-          45,
-        ]}%.`,
+        description: talentText`Allows your Shield Block and Shield Reflection abilities to ${[
+          "block/reflect an additional attack/spell and reduces their cooldowns by 15%.",
+          "block/reflect two(three?) additional attacks/spells and reduces their cooldowns by 30%.",
+        ]}`,
       },
-      "Blade Mail": {
-        name: "Blade Mail",
+      "Defiance": {
+        name: "Defiance",
         pos: "c3",
-        icon: icons["inv_shoulder_11"],
-        maxRank: 3,
+        icon: icons["ability_bullrush"],
+        maxRank: 5,
         reqPoints: 10,
-        description: talentText`When struck in combat inflicts up to ${[
+        description: talentText`Increases the threat generated by your attacks by ${[
+          3,
+          6,
+          9,
           12,
+          15,
+        ]}% while in Defensive Stance and reduces your threat generated while in Battle Stance and Berserker Stance by ${[
+          6,
+          12,
+          18,
           24,
-          36,
-        ]} damage to the attacker. Damage scales with your level.`,
+          30,
+        ]}%.`,
       },
       "Concussion Blow": {
         name: "Concussion Blow",
@@ -658,24 +686,11 @@ export const data: TalentData = {
         icon: icons["ability_thunderbolt"],
         maxRank: 1,
         reqPoints: 10,
-        prereq: "Improved Revenge",
-        arrows: [{ dir: "down", from: "b4", to: "c4" }],
         description: talentText`A brutal strike that stuns the opponent for 4 sec. This ability causes a high amount of threat.`,
-      },
-      "Mocker": {
-        name: "Mocker",
-        pos: "d1",
-        icon: icons["spell_nature_reincarnation"],
-        maxRank: 2,
-        reqPoints: 15,
-        description: talentText`Improves your chance to hit with Taunt, Challenging Shout and Mocking Blow abilities by ${[
-          3,
-          6,
-        ]}%.`,
       },
       "Iron Will": {
         name: "Iron Will",
-        pos: "d2",
+        pos: "d1",
         icon: icons["spell_magic_magearmor"],
         maxRank: 3,
         reqPoints: 15,
@@ -683,6 +698,22 @@ export const data: TalentData = {
           10,
           20,
           30,
+        ]}%.`,
+      },
+      "Shield Assault": {
+        name: "Shield Assault",
+        pos: "d2",
+        icon: icons["ability_warrior_shieldbash"],
+        maxRank: 2,
+        reqPoints: 15,
+        prereq: "Shield Mastery",
+        arrows: [{ dir: "down", from: "c2", to: "d2"}],
+        description: talentText`Reduces the cost of your Shield Bash by ${[
+          5,
+          10,
+        ]} rage points and gives it a 100% chance to silence the target for 2 seconds. In addition, increases the damage of your Shield Slam by ${[
+          5,
+          10,
         ]}%.`,
       },
       "One-Handed Weapon Specialization": {
@@ -699,21 +730,18 @@ export const data: TalentData = {
           10,
         ]}%.`,
       },
-      "Defiance": {
-        name: "Defiance",
+      "Blade Mail": {
+        name: "Blade Mail",
         pos: "d4",
-        icon: icons["ability_bullrush"],
-        maxRank: 5,
+        icon: icons["inv_shoulder_11"],
+        maxRank: 3,
         reqPoints: 15,
-        description: talentText`Increases the threat generated by your attacks by ${[
-          3,
-          6,
-          9,
-          12,
-          15,
-        ]}% while in Defensive Stance.`,
+        description: talentText`When struck in combat inflicts up to ${[
+          0.5,
+          1,
+          1.5,
+        ]}% of your armor as damage to the attacker.`,
       },
-      
       "Shield Toss": {
         name: "Shield Toss",
         pos: "e1",
@@ -777,20 +805,19 @@ export const data: TalentData = {
         prereq: "One-Handed Weapon Specialization",
         arrows: [{ dir: "down", from: "d3", to: "f3" }],
         description: talentText`Increases your chances to dodge and to get a critical strike by ${[
-          1,
           2,
-          3,
           4,
-          5,
+          6,
+          8,
+          10,
         ]}% and makes your dodges and parries generate ${[
-          50,
-          100,
-          150,
+          40,
+          80,
+          120,
+          160,
           200,
-          250,
         ]}% of Rage.`,
-      },
-                  
+      },         
       "Constitution": {
         name: "Constitution",
         pos: "g2",
@@ -799,7 +826,7 @@ export const data: TalentData = {
         reqPoints: 30,
         prereq: "Training and Discipline",
         arrows: [{ dir: "down", from: "e2", to: "g2" }],
-        description: talentText`Increases your Strength and Agility by up to 1% of your current Health. Also if you have more than 50% of your Health you become immune to Diseases and if more than 75% to Poisons.`,
+        description: talentText`Increases your Strength, Agility and Spirit by up to 1% of your current Health. Also if you have more than 50% of your Health you become immune to Diseases and if more than 75% to Poisons.`,
       },
     },
   },

@@ -101,7 +101,7 @@ export const data: TalentData = {
       },
       "Reverberation": {
         name: "Reverberation", 
-        pos: "c2", 
+        pos: "b4", 
         icon: icons["spell_frost_frostward"], 
         maxRank: 5, 
         reqPoints: 10, 
@@ -114,30 +114,32 @@ export const data: TalentData = {
         ]} sec.`, 
       },
       "Sand Blast": {
-        name: "Sand Blast", pos: "c1", 
+        name: "Sand Blast", 
+        pos: "c1", 
         icon: icons["spell_fire_windsofwoe"], 
         maxRank: 1, 
         reqPoints: 10, 
         prereq: "Earth's Grasp", 
         arrows: [{ dir: "down", from: "b1", to: "c1" }], 
-        description: talentText`Sends a wave of sand, blinding nearby enemies for 4 seconds. Targets must be facing you. Any damage caused will remove the effect.`, 
+        description: talentText`Sends a wave of sand, blinding nearby enemies for 5 seconds. Targets must be facing you. Any damage caused will remove the effect.`, 
       },
       "Elemental Focus": {
-        name: "Elemental Focus", pos: "b4", 
+        name: "Elemental Focus", 
+        pos: "c2", 
         icon: icons["spell_shadow_manaburn"], 
         maxRank: 5, 
         reqPoints: 5, 
         description: talentText`Gives you a ${[
-          2,
-          4,
+          3,
           6,
-          8,
-          10,
+          9,
+          12,
+          15,
         ]}% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the Mana cost of your next damage spell by 100%.`, 
       },
       "Call of Thunder": {
         name: "Call of Thunder",
-         pos: "c3", 
+        pos: "c3", 
         icon: icons["spell_nature_callstorm"], 
         maxRank: 2, 
         reqPoints: 10, 
@@ -178,7 +180,7 @@ export const data: TalentData = {
         icon: icons["spell_fire_elementaldevastation"], 
         maxRank: 3, 
         reqPoints: 15, 
-        description: talentText`Your offensive spell crits will increase your chance to get a critical strike with all attacks and spells by 5% for ${[
+        description: talentText`Your offensive spell crits will increase your chance to get a critical strike with all attacks and spells by 10% for ${[
           5,
           10,
           15,
@@ -294,32 +296,39 @@ export const data: TalentData = {
           30,
         ]}%.`, 
       },
+      "Toughness": {
+        name: "Toughness", 
+        pos: "a2", 
+        icon: icons["spell_holy_devotion"], 
+        maxRank: 3, 
+        reqPoints: 0, 
+        description: talentText`Increases your resistance and armor value from items by ${[
+          5,
+          10,
+          15,
+        ]}%.`, 
+      },
       "Ancestral Knowledge": {
         name: "Ancestral Knowledge", 
-        pos: "a2", icon: icons["spell_shadow_grimward"], 
-        maxRank: 5, 
+        pos: "a3", icon: icons["spell_shadow_grimward"], 
+        maxRank: 4, 
         reqPoints: 0, 
         description: talentText`Increases your maximum Mana by ${[
           2,
+          3,
           4,
-          6,
-          8,
-          10,
+          5,
         ]}%.`, 
       },
-      "Shield Specialization": {
-        name: "Shield Specialization", 
-        pos: "a3", 
-        icon: icons["inv_shield_06"], 
-        maxRank: 2, 
+      "Earth Shield": {
+        name: "Earth Shield", 
+        pos: "a4", 
+        icon: icons["spell_nature_skinofearth"], 
+        maxRank: 1, 
         reqPoints: 0, 
-        description: talentText`Increases your chance to block attacks with a shield by ${[
-          3,
-          5,
-        ]}% and has a ${[
-          50,
-          100,
-        ]}% chance to restore 1% of your Mana when a block occurs.`, 
+        prereq: "Ancestral Knowledge", 
+        arrows: [{ dir: "right", from: "a3", to: "a4" }], 
+        description: talentText`Increases your chance to block by 30% and allows you to block without a shield. In addition heals the shaman for 1% health every 5 seconds and for 1% health on block. Lasts for 10 min or 10 attacks.`, 
       },
       "Guardian Totems": {
         name: "Guardian Totems", 
@@ -349,23 +358,28 @@ export const data: TalentData = {
           5,
         ]}%.`, 
       },
-      "Toughness": {
-        name: "Toughness", 
+      "Improved Elemental Shields": {
+        name: "Improved Elemental Shields", 
         pos: "b4", 
-        icon: icons["spell_holy_devotion"], 
-        maxRank: 3, 
+        icon: icons["placeholder_icon"], 
+        maxRank: 2, 
         reqPoints: 5, 
-        description: talentText`Increases your resistance and armor value from items by ${[
+        description: talentText`Increases the damage done by your Lightning Shield orbs by ${[
+          10,
+          20,
+        ]}%, reduces its Mana cost by ${[
           5,
           10,
-          15,
+        ]}% and increases the number of orbs by ${[
+          20,
+          40,
         ]}%.`, 
       },
       "Rockhide": {
         name: "Rockhide", 
         pos: "c1", 
         icon: icons["stoneskinz"], 
-        maxRank: 5, 
+        maxRank: 3, 
         reqPoints: 10, 
         prereq: "Guardian Totems", 
         arrows: [{ dir: "down", from: "b1", to: "c1" }], 
@@ -373,14 +387,10 @@ export const data: TalentData = {
           1,
           2,
           3,
-          4,
-          5,
         ]}% chance when struck in combat to inflict up to 120 physical damage (scales with your level) to nearby enemies and to stun them for 1 seconds. In addition, reduces all damage taken by ${[
-          1,
           2,
-          3,
           4,
-          5,
+          6,
         ]}%.`, 
       },
       "Flurry": {
@@ -392,44 +402,44 @@ export const data: TalentData = {
         prereq: "Thundering Strikes", 
         arrows: [{ dir: "down", from: "b2", to: "c2" }], 
         description: talentText`Increases your attack speed by ${[
+          5,
           10,
           15,
           20,
           25,
-          30,
         ]}% for your next 3 swings after dealing a critical strike.`, 
       },
-      "Earth Shield": {
-        name: "Earth Shield", 
+      "Aftershock": {
+        name: "Aftershock", 
         pos: "c3", 
-        icon: icons["spell_nature_skinofearth"], 
+        icon: icons["spell_nature_elementalprecision_2"], 
         maxRank: 1, 
-        reqPoints: 10, 
-        prereq: "Shield Specialization", 
+        reqPoints: 10,
+        prereq: "Ancestral Knowledge", 
         arrows: [{ dir: "down", from: "a3", to: "c3" }], 
-        description: talentText`Increases Healing done and taken by 10% and chance to block by 30%. Lasts for 10 min or 20 attacks.`, 
+        description: talentText`Blasts a target with aftershock, consuming your shock spells and applies an effects based on consumed shock spells.\n\nFlame Shock: instantly deals damage equal to 10 sec of Flame Shock.\n\nFrost Shock: stuns the target for 3 sec.\n\nEarth Shock: breaks movement impairing effects for you and forces the target to focus attacks on you for 3 sec.`, 
       },
-      "Weapon Mastery": {
-        name: "Weapon Mastery", 
+      "Improved Ghost Wolf": {
+        name: "Improved Ghost Wolf", 
         pos: "c4", 
-        icon: icons["ability_hunter_swiftstrike"], 
-        maxRank: 5, 
+        icon: icons["spell_nature_spiritwolf"], 
+        maxRank: 2, 
         reqPoints: 10, 
-        description: talentText`Increases the damage you deal with all weapons by ${[
+        description: talentText`Reduces the Mana cost of your Ghost Wolf spell by ${[
+          50,
+          100
+        ]}% and cast time by ${[
+          1,
           2,
-          4,
-          6,
-          8,
-          10,
-        ]}%.`, 
+        ]} sec.`, 
       },
-      "Improved Weapon Totems": {
-        name: "Improved Weapon Totems", 
+      "Enhancing Totems": {
+        name: "Enhancing Totems", 
         pos: "d1", 
-        icon: icons["spell_fire_enchantweapon"], 
+        icon: icons["spell_nature_earthbindtotem"], 
         maxRank: 2, 
         reqPoints: 15, 
-        description: talentText`Increases the effect and reduces the Mana cost of your Windfury and Flametongue Totems by ${[
+        description: talentText`Increases the effect and reduces the Mana cost of your Strength of Earth and Grace of Air totems by ${[
           25,
           50,
         ]}%.`, 
@@ -448,47 +458,29 @@ export const data: TalentData = {
           20,
         ]}%.`, 
       },
-      "Improved Ghost Wolf": {
-        name: "Improved Ghost Wolf", 
+      "Weapon Mastery": {
+        name: "Weapon Mastery", 
         pos: "d3", 
-        icon: icons["spell_nature_spiritwolf"], 
-        maxRank: 2, 
+        icon: icons["ability_hunter_swiftstrike"], 
+        maxRank: 5, 
         reqPoints: 15, 
-        description: talentText`Reduces the Mana cost of your Ghost Wolf spell by ${[
-          50,
-          100
-        ]}% and cast time by ${[
-          1,
+        description: talentText`Increases the damage you deal with all weapons by ${[
           2,
-        ]} sec.`, 
-      },
-      "Improved Lightning Shield": {
-        name: "Improved Lightning Shield", 
-        pos: "d4", 
-        icon: icons["spell_nature_lightningshield"], 
-        maxRank: 3, 
-        reqPoints: 15, 
-        description: talentText`Increases the damage done by your Lightning Shield orbs by ${[
-          5,
+          4,
+          6,
+          8,
           10,
-          15,
-        ]}%, reduces its Mana cost by ${[
-          5,
-          10,
-          15,
-        ]}% and increases the number of orbs by ${[
-          3,
-          5,
-          7,
-        ]}.`, 
+        ]}%.`, 
       },
-      "Enhancing Totems": {
-        name: "Enhancing Totems", 
+      "Improved Weapon Totems": {
+        name: "Improved Weapon Totems", 
         pos: "e1", 
-        icon: icons["spell_nature_earthbindtotem"], 
+        icon: icons["spell_fire_enchantweapon"], 
         maxRank: 2, 
         reqPoints: 20, 
-        description: talentText`Increases the effect and reduces the Mana cost of your Strength of Earth and Grace of Air totems by ${[
+        prereq: "Enhancing Totems", 
+        arrows: [{ dir: "down", from: "d1", to: "e1" }],
+        description: talentText`Increases the effect and reduces the Mana cost of your Windfury and Flametongue Totems by ${[
           25,
           50,
         ]}%.`, 
@@ -520,11 +512,11 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 25, 
         description: talentText`Imbue weapons with storm. Gives you a${["","n","","",""]} ${[
-          4,
-          8,
-          12,
-          16,
+          5,
+          10,
+          15,
           20,
+          25,
         ]}% chance to deal additional up to 300 Nature damage.(Scales with your level)`, 
       },
       "Shamanism": {
@@ -541,15 +533,13 @@ export const data: TalentData = {
           "Effect occurs more often than Shamanism (Rank 4)",
         ]}`, 
       },
-      "Aftershock": {
-        name: "Aftershock", 
-        pos: "g2", 
-        icon: icons["spell_nature_elementalprecision_2"], 
+      "Stormforged": {
+        name: "Stormforged", 
+        pos: "g2",
+        icon: icons["placeholder_icon"],
         maxRank: 1, 
-        reqPoints: 30, 
-        prereq: "Bloodlust", 
-        arrows: [{ dir: "down", from: "e2", to: "g2" }], 
-        description: talentText`Blasts a target with aftershock, consuming your shock spells and applies an effects based on consumed shock spells.\n\nFlame Shock: instantly deals damage equal to 15 sec of Flame Shock.\n\nFrost Shock: stuns the target for 3 sec.\n\nEarth Shock: breaks movement impairing effects for you and forces the target to focus attacks on you for 5 sec.`, 
+        reqPoints: 25, 
+        description: talentText`Increases spell damage and healing by 20% of Attack Power. In addition, Stormstrike restores 5% of mana and generates three extra Elemental Shield charges.`,
       },
     },
   },
@@ -590,16 +580,19 @@ export const data: TalentData = {
           10,
         ]}%.`, 
       },
-      "Totemic Mastery": {
-        name: "Totemic Mastery", 
-        pos: "a3", 
-        icon: icons["spell_nature_nullward"], 
+      "Spiritwalking": {
+        name: "Spiritwalking", 
+        pos: "a4", 
+        icon: icons["spiritwalker"], 
         maxRank: 2, 
         reqPoints: 0, 
-        description: talentText`The radius of your totems is increased by ${[
-          10,
-          20,
-        ]}%.`, 
+        description: talentText`Reduces the cooldown of your Astral Recall and Reincarnation spells by ${[
+          15,
+          30,
+        ]} minutes and increases the amount of Health and Man you reincarnate with by an additional ${[
+          15,
+          30,
+        ]}%. In addition allows you to keep positive effects through reincarnation.`, 
       },
       "Improved Healing Wave": {
         name: "Improved Healing Wave", 
@@ -615,15 +608,15 @@ export const data: TalentData = {
           0.5,
         ]} sec.`, 
       },
-      "Totemic Focus": {
-        name: "Totemic Focus", 
+      "Totemic Mastery": {
+        name: "Totemic Mastery", 
         pos: "b3", 
-        icon: icons["spell_nature_moonglow"], 
+        icon: icons["spell_nature_nullward"], 
         maxRank: 2, 
         reqPoints: 5, 
-        description: talentText`Reduces the Mana cost of your Totems by ${[
-          25,
-          50,
+        description: talentText`The radius of your totems is increased by ${[
+          10,
+          20,
         ]}%.`, 
       },
       "Nature Grace": {
@@ -660,21 +653,15 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "a2", to: "c2" }], 
         description: talentText`Reduces the damage taken from physical attacks and Fire spells by 50%, but reduces damage caused by 30%. Lasts 10 seconds.`, 
       },
-      "Spiritwalking": {
-        name: "Spiritwalking", 
+      "Totemic Focus": {
+        name: "Totemic Focus", 
         pos: "c3", 
-        icon: icons["spiritwalker"], 
+        icon: icons["spell_nature_moonglow"], 
         maxRank: 2, 
         reqPoints: 10, 
-        description: talentText`Reduces the chance you are hit by melee attacks by ${[
-          2,
-          4,
-        ]}%. In addition, reduces the cooldown of your Astral Recall and Reincarnation spells by ${[
-          15,
-          30,
-        ]} minutes and increases the amount of Health and Man you reincarnate with by an additional ${[
-          15,
-          30,
+        description: talentText`Reduces the Mana cost of your Totems by ${[
+          25,
+          50,
         ]}%.`, 
       },
       "Nature Focus": {
@@ -832,7 +819,7 @@ export const data: TalentData = {
         reqPoints: 30, 
         prereq: "Purification", 
         arrows: [{ dir: "down", from: "e2", to: "g2" }], 
-        description: talentText`Attempts to cure 1 poison, disease and magic effect, and additional 1 poison, disease and magic effect in 3 seconds.`, 
+        description: talentText`Attempts to cure 1 poison, disease and magic effect, and additional 1 poison, disease and magic effect every 2 seconds for 6 seconds.`, 
       },
     },
   },
