@@ -451,12 +451,18 @@ export const data: TalentData = {
         maxRank: 5, 
         reqPoints: 15, 
         description: talentText`Increases total health by ${[
+          2,
           4,
+          6,
           8,
-          12,
-          16,
+          10,
+        ]}%. In addition reduces fatal damage by ${[ 
+          10,
           20,
-        ]}%.`, 
+          30,
+          40,
+          50,
+          ]}%.`,
       },
       "Weapon Mastery": {
         name: "Weapon Mastery", 
@@ -538,7 +544,7 @@ export const data: TalentData = {
         pos: "g2",
         icon: icons["placeholder_icon"],
         maxRank: 1, 
-        reqPoints: 25, 
+        reqPoints: 30, 
         description: talentText`Increases spell damage and healing by 20% of Attack Power. In addition, Stormstrike restores 5% of mana and generates three extra Elemental Shield charges.`,
       },
     },
@@ -589,7 +595,7 @@ export const data: TalentData = {
         description: talentText`Reduces the cooldown of your Astral Recall and Reincarnation spells by ${[
           15,
           30,
-        ]} minutes and increases the amount of Health and Man you reincarnate with by an additional ${[
+        ]} minutes and increases the amount of Health and Mana you reincarnate with by an additional ${[
           15,
           30,
         ]}%. In addition allows you to keep positive effects through reincarnation.`, 

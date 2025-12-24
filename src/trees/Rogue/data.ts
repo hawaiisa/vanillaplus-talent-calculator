@@ -584,7 +584,7 @@ export const data: TalentData = {
           10,
           20,
           30,
-        ]}seconds afterwards.`, 
+        ]} seconds afterwards.`, 
       },
       "Master of Deception": {
         name: "Master of Deception", 

@@ -289,7 +289,7 @@ export const data: TalentData = {
         icon: icons["inevitabledoom"],
         maxRank: 1,
         reqPoints: 30,
-        description: talentText`Reduces the time between periodic ticks and duration of your spells by 30% and reduces your global cooldown by 30%. In addition, your Drain spells affect an extra target`,
+        description: talentText`Reduces the time between periodic ticks and duration of your spells by 30% and reduces your global cooldown by 30%. In addition, your Drain spells affect an extra target.`,
       },
     },
   },
@@ -339,7 +339,7 @@ export const data: TalentData = {
         pos: "a4",
         icon: icons["spell_shadow_lifedrain"],
         maxRank: 2,
-        reqPoints: 5,
+        reqPoints: 0,
         description: talentText`Increases the effectiveness of your Health funnel spell by ${[
           25,
           50,

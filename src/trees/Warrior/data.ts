@@ -139,7 +139,7 @@ export const data: TalentData = {
         icon: icons["placeholder_icon"],
         maxRank: 2,
         reqPoints: 15,
-        description: talentText`Increases your Attack Power by${[
+        description: talentText`Increases your Attack Power by ${[
           5,
           10,
         ]}% while in Battle Stance.`,
@@ -522,7 +522,7 @@ export const data: TalentData = {
         ]}% and reduces your global cooldown by ${[
           0.25,
           0.5,
-        ]}%.`,
+        ]} seconds.`,
       },
       "Bloodthirst": {
         name: "Bloodthirst",

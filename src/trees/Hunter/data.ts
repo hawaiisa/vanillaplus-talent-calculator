@@ -467,7 +467,7 @@ export const data: TalentData = {
         pos: "e1", 
         icon: icons["placeholder_icon"], 
         maxRank: 2, 
-        reqPoints: 15,
+        reqPoints: 20,
         description: talentText`Causes your Distracting Shot to taunt target for ${[
           2,
           4,
