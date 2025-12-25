@@ -454,13 +454,25 @@ export const data: TalentData = {
         icon: icons["placeholder_icon"], 
         maxRank: 5, 
         reqPoints: 15,
-        description: talentText`Increases your chance to get a critical strike with Bows, Crossbows and Guns by ${[
+        description: talentText`Increases your chance to get a critical strike with Crossbows by ${[
           1,
           2,
           3,
           4,
           5,
-        ]}%.`, 
+        ]}%. Gives you a ${[
+          1,
+          2,
+          3,
+          4,
+          5,
+          ]}% chance to launch an extra arrow to the same target after dealing damage with your Bow. Causes your shots to ignore up to ${[
+          120,
+          240,
+          360,
+          480,
+          600,
+        ]}(scales with your level) of your target's armor when carrying a Gun.`, 
       },
       "Improved Distracting Shot": {
         name: "Improved Distracting Shot", 

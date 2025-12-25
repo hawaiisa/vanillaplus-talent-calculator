@@ -110,7 +110,7 @@ export const data: TalentData = {
         pos: "b4",
         icon: icons["drainingall"],
         maxRank: 2,
-        reqPoints: 10,
+        reqPoints: 5,
         description: talentText`Increases the Health drained by your Drain Life and Drain Soul spells by ${[
           5,
           10,
@@ -149,7 +149,7 @@ export const data: TalentData = {
         pos: "c4",
         icon: icons["spell_shadow_abominationexplosion"],
         maxRank: 5,
-        reqPoints: 5,
+        reqPoints: 10,
         description: talentText`Reduces the Mana cost and threat caused by your Corruption spell by ${[
           6,
           12,
@@ -395,7 +395,7 @@ export const data: TalentData = {
         pos: "b4",
         icon: icons["demonic_resilence"],
         maxRank: 2,
-        reqPoints: 10,
+        reqPoints: 5,
         description: talentText`Decreases the damage taken by your demons by ${[
           10,
           20,

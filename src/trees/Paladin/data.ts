@@ -231,7 +231,7 @@ export const data: TalentData = {
         pos: "e3", 
         icon: icons["spell_holy_purifyingpower"], 
         maxRank: 3, 
-        reqPoints: 15, 
+        reqPoints: 20, 
         description: talentText`Reduces the Mana cost of your Cleanse, Purify, Consecration, Exorcism, Holy Wrath and Hammer of Wrath spells by ${[
           15,
           30,
@@ -626,7 +626,7 @@ export const data: TalentData = {
         pos: "b3", 
         icon: icons["spell_holy_persuitofjustice"], 
         maxRank: 2, 
-        reqPoints: 10, 
+        reqPoints: 5, 
         description: talentText`Increases the movement speed and mounted movement speed by ${[
           5,
           10,
@@ -675,7 +675,7 @@ export const data: TalentData = {
         pos: "c4", 
         icon: icons["spell_holy_auraoflight"], 
         maxRank: 2, 
-        reqPoints: 5, 
+        reqPoints: 10, 
         description: talentText`Increases the damage done by your Retribution Aura by ${[
           50,
           100,

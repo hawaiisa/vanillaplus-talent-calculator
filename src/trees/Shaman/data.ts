@@ -104,7 +104,7 @@ export const data: TalentData = {
         pos: "b4", 
         icon: icons["spell_frost_frostward"], 
         maxRank: 5, 
-        reqPoints: 10, 
+        reqPoints: 5, 
         description: talentText`Reduces the cooldown of you Shock spells by ${[
           1,
           2,
@@ -128,7 +128,7 @@ export const data: TalentData = {
         pos: "c2", 
         icon: icons["spell_shadow_manaburn"], 
         maxRank: 5, 
-        reqPoints: 5, 
+        reqPoints: 10, 
         description: talentText`Gives you a ${[
           3,
           6,

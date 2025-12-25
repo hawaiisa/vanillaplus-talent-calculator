@@ -175,7 +175,7 @@ export const data: TalentData = {
         pos: "d4",
         icon: icons["ability_backstab"],
         maxRank: 3,
-        reqPoints: 10,
+        reqPoints: 15,
         prereq: "Impale",
         arrows: [{ dir: "down", from: "c4", to: "d4"}],
         description: talentText`Your critical strikes cause the opponent to bleed, dealing ${[
