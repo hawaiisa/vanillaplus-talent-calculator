@@ -403,7 +403,7 @@ export const data: TalentData = {
       },
       "Improved Concentration Aura": {
         name: "Improved Concentration Aura", 
-        pos: "c2", 
+        pos: "c4", 
         icon: icons["spell_holy_mindsooth"], 
         maxRank: 3, 
         reqPoints: 10, 
@@ -433,7 +433,7 @@ export const data: TalentData = {
       },
       "Seal of Fury": {
         name: "Seal of Fury", 
-        pos: "c4", 
+        pos: "c2", 
         icon: icons["spell_holy_crusader"], 
         maxRank: 1, 
         reqPoints: 10, 
