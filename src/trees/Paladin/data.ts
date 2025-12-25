@@ -401,15 +401,6 @@ export const data: TalentData = {
         arrows: [{ dir: "down", from: "b1", to: "c1" }], 
         description: talentText`Degenerates the movement and attack capabilities of nearby opponents by 15%.`, 
       },
-      "Seal of Fury": {
-        name: "Seal of Fury", 
-        pos: "c3", 
-        icon: icons["spell_holy_crusader"], 
-        maxRank: 1, 
-        reqPoints: 10, 
-        arrows: [{ dir: "down", from: "c3", to: "e2"}], 
-        description: talentText`Fills the Paladin with divine fury for 30 seconds, causing melee attacks to deal additional physical damage equal to 30% of normal weapon damage to 3 targets in front of the Paladin. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 3 seconds, forcing the target to attack you. Has no effect if the target is already attacking you.`, 
-      },
       "Improved Concentration Aura": {
         name: "Improved Concentration Aura", 
         pos: "c2", 
@@ -428,7 +419,7 @@ export const data: TalentData = {
       },
       "Second Wind": {
         name: "Second Wind", 
-        pos: "c4", 
+        pos: "c3", 
         icon: icons["inv_jewelry_talisman_06"], 
         maxRank: 5, 
         reqPoints: 10, 
@@ -440,19 +431,13 @@ export const data: TalentData = {
           20,
         ]}% of healing received.`, 
       },
-      "Guardian's Favor": {
-        name: "Guardian's Favor", 
-        pos: "d2", 
-        icon: icons["spell_holy_sealofprotection"], 
-        maxRank: 2, 
-        reqPoints: 15, 
-        description: talentText`Increases the effect of your Blessing of Salvation and Blessing of Sanctuary by ${[
-          10,
-          20,
-        ]}%. Also increases the duration and reduces the Mana cost of your Blessings of Freedom, Protection, Sacrifice, Salvation, and Sanctuary by ${[
-          50,
-          100,
-        ]}%.`, 
+      "Seal of Fury": {
+        name: "Seal of Fury", 
+        pos: "c4", 
+        icon: icons["spell_holy_crusader"], 
+        maxRank: 1, 
+        reqPoints: 10, 
+        description: talentText`Fills the Paladin with divine fury for 30 seconds, causing melee attacks to deal additional physical damage equal to 30% of normal weapon damage to 3 targets in front of the Paladin. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 3 seconds, forcing the target to attack you. Has no effect if the target is already attacking you.`, 
       },
       "One-Handed Weapon Specialization": {
         name: "One-Handed Weapon Specialization", 
@@ -466,6 +451,20 @@ export const data: TalentData = {
           6,
           8,
           10,
+        ]}%.`, 
+      },
+      "Guardian's Favor": {
+        name: "Guardian's Favor", 
+        pos: "d3", 
+        icon: icons["spell_holy_sealofprotection"], 
+        maxRank: 2, 
+        reqPoints: 15, 
+        description: talentText`Increases the effect of your Blessing of Salvation and Blessing of Sanctuary by ${[
+          10,
+          20,
+        ]}%. Also increases the duration and reduces the Mana cost of your Blessings of Freedom, Protection, Sacrifice, Salvation, and Sanctuary by ${[
+          50,
+          100,
         ]}%.`, 
       },
       "Unbreakability": {
@@ -482,12 +481,12 @@ export const data: TalentData = {
       },
       "Improved Holy Shield": {
         name: "Improved Holy Shield", 
-        pos: "e1", 
+        pos: "e4", 
         icon: icons["spell_holy_blessingofprotection"], 
         maxRank: 2, 
         reqPoints: 20, 
         prereq: "Holy Shield", 
-        arrows: [{ dir: "left", from: "e1", to: "e2" }],
+        arrows: [{ dir: "right", from: "e3", to: "e4" }],
         description: talentText`Allows your Holy Shield to block an additional ${[
           3,
           6,
@@ -498,22 +497,20 @@ export const data: TalentData = {
       },
       "Holy Shield": {
         name: "Holy Shield", 
-        pos: "e2", 
+        pos: "e3", 
         icon: icons["spell_holy_blessingofprotection"], 
         maxRank: 1, 
         reqPoints: 20, 
-        prereq: "Seal of Fury", 
-        arrows: [{ dir: "left", from: "e2", to: "e3" }], 
         description: talentText`Increases chance to block by 30% for 10 seconds, and deals 45 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes twice additional threat. Each block expends a charge. 4 charges.`, 
       },
       "Improved Righteous Fury": {
         name: "Improved Righteous Fury", 
-        pos: "e4", 
+        pos: "e2", 
         icon: icons["spell_holy_sealoffury"], 
         maxRank: 3, 
         reqPoints: 20, 
         prereq: "Seal of Fury", 
-        arrows: [{ dir: "right", from: "e3", to: "e4"}], 
+        arrows: [{ dir: "down", from: "c2", to: "e2"}], 
         description: talentText`Increase the amount of threat generated while under the effect of Righteous Fury by ${[
           10,
           20,
