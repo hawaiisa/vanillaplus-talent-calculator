@@ -700,7 +700,7 @@ export const data: TalentData = {
         pos: "c4", 
         icon: icons["spell_frost_stun"], 
         maxRank: 5, 
-        reqPoints: 5, 
+        reqPoints: 10, 
         description: talentText`Reduces the Mana cost of your Frost spells by ${[
           3,
           6,

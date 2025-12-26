@@ -437,7 +437,7 @@ export const data: TalentData = {
         icon: icons["spell_holy_crusader"], 
         maxRank: 1, 
         reqPoints: 10, 
-        description: talentText`Fills the Paladin with divine fury for 30 seconds, causing melee attacks to deal additional physical damage equal to 30% of normal weapon damage to 3 targets in front of the Paladin. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 3 seconds, forcing the target to attack you. Has no effect if the target is already attacking you.`, 
+        description: talentText`Fills the Paladin with divine fury for 2 minutes, causing melee attacks to deal additional physical damage equal to 30% of normal weapon damage to 3 targets in front of the Paladin. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 2 seconds, forcing the target to attack you. Has no effect if the target is already attacking you.`, 
       },
       "One-Handed Weapon Specialization": {
         name: "One-Handed Weapon Specialization", 

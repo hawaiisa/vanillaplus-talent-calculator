@@ -167,7 +167,10 @@ export const data: TalentData = {
         description: talentText`Reduces the cooldown of Drain Soul by ${[
           5,
           10,
-        ]} sec. Also gives you a 50% chance to get 10% increase to your Health and Mana regeneration over 20 seconds if the target is killed by you while you drain its soul. This effect stacks up to 5 times.`,
+        ]} sec. Also gives you a ${[
+          50,
+          100,
+        ]}% chance to get 10% increase to your Health and Mana regeneration over 20 seconds if the target is killed by you while you drain its soul. This effect stacks up to 5 times.`,
       },
       "Nightfall": {
         name: "Nightfall",
