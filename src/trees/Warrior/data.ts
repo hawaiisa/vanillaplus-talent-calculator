@@ -393,7 +393,7 @@ export const data: TalentData = {
         pos: "d1",
         icon: icons["ability_warrior_cleave"],
         maxRank: 2,
-        reqPoints: 10,
+        reqPoints: 15,
         description: talentText`Increases the number of targets your Cleave hit by ${[
           1,
           2,
@@ -492,7 +492,7 @@ export const data: TalentData = {
           15,
           20,
           25,
-        ]}% for your next 2 swings after dealing a melee critical strike.`,
+        ]}% for your next 3 swings after dealing a melee critical strike.`,
       },
       "Berserker's Blood": {
         name: "Berserker's Blood",
