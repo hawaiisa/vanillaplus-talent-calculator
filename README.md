@@ -1,3 +1,6 @@
+# This fork is out of date.
+## Please use https://andser99.github.io/vanillaplus-talent-calculator/#/ for an up-to-date V+ Talent Calculator
+
 # WoW Vanilla+ Talent Calculator
 
 CSS-grid based talent calculator  
